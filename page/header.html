@@ -1,0 +1,127 @@
+<a href="index.html" id="logo">
+  <img class="header-logo" src="../img/logo.png" alt="logo" />
+
+</a>
+
+<input type="checkbox" id="hamburger-menu" />
+<label for="hamburger-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</label>
+<div class="gnb" id="gnb">
+  <div id="lang" data-role="selectBox">
+  <div date-value="optValue" class="selected-option" ></div>
+      <ul class="hide">
+        <li onclick='selectLang("ko")'><i><img src="../img/icon-lang-ko.svg" alt=""/></i><span>KO</span></li>
+        <li onclick='selectLang("en")'><i><img src="../img/icon-lang-en.svg" alt=""/></i><span>EN</span</li>
+      </ul>
+  </div>
+
+  <ol>
+    <li class="header_target_home" style="display: none;" ><a href="../index.html">Home</a></li>
+    <li class="header_target_launchapp" style="display: none;"><a href="../page/launchapp.html">Launch App</a></li>
+    <li class="header_target_leedoworld" style="display: none;"><a href="../page/leedoworld.html">Leedo World</a></li>
+  </ol>
+</div>
+
+<script type="text/javascript">
+  const body = document.querySelector("body");
+  const select = document.querySelector(`[data-role="selectBox"]`);
+  const values = select.querySelector(`[date-value="optValue"]`);
+  const option = select.querySelector("ul");
+  const opts = option.querySelectorAll("li");
+
+  /* 셀렉트영역 클릭 시 옵션 숨기기, 보이기 */
+  function selects(e) {
+    e.stopPropagation();
+    option.setAttribute("style", `top:${select.offsetHeight}px`);
+    if (option.classList.contains("hide")) {
+      option.classList.remove("hide");
+      option.classList.add("show");
+    } else {
+      option.classList.add("hide");
+      option.classList.remove("show");
+    }
+    selectOpt();
+  }
+
+  /* 옵션선택 */
+  function selectOpt() {
+
+    opts.forEach((opt) => {
+      const innerValue = opt.innerHTML;
+      function changeValue() {
+        opt.removeEventListener("click",changeValue);
+        values.innerHTML = innerValue;
+      }
+      opt.addEventListener("click", changeValue);
+    });
+  }
+
+
+  /* 렌더링 시 옵션의 첫번째 항목 기본 선택 */
+  function selectFirst() {
+    const curLang = getCurLang();
+    // console.log("curLang => ", curLang);
+    let firstValue='';
+    if(curLang =="ko"){
+      firstValue = opts[0].innerHTML;
+    }else{
+      firstValue = opts[1].innerHTML;
+    }
+    values.innerHTML = `${firstValue}`;
+  }
+
+  /* 옵션밖의 영역(=바디) 클릭 시 옵션 숨김 */
+  function hideSelect() {
+    if (option.classList.contains("show")) {
+      option.classList.add("hide");
+      option.classList.remove("show");
+    }
+  }
+
+  selectFirst();
+  select.addEventListener("click", selects);
+  body.addEventListener("click", hideSelect);
+</script>
+
+<!--
+  <script>
+    var cloneElements = $('nav').clone();
+    // 변수 cloneElements를 만들어 복사된 요소들을 저장
+
+    cloneElements .appendTo('.lnb');
+    // 복사한 요소들을 buttons2 클래스명의 자식요소로 넣기
+</script>
+-->
+<script>
+  let url = window.location.href;
+  console.log("url    ", url);
+  let home = url.indexOf("index");
+  let launchapp = url.indexOf("launchapp");
+  let leedoworld = url.indexOf("leedoworld");
+  // console.log("searchsearch ",search)
+  if(launchapp > 0){
+    // Launchapp
+    $(".header-logo").attr("src", "../img/logo-green.png");
+    $(".header_target_home").attr("style","display:block;");
+    $(".header_target_launchapp").attr("style","display:none;");
+    $(".header_target_leedoworld").attr("style","display:block;");
+  }else{
+    $(".header-logo").attr("src", "../img/logo.png");
+    if(leedoworld >0){
+      // LeedoWorld
+      $(".header_target_home").attr("style","display:block;");
+      $(".header_target_launchapp").attr("style","display:block;");
+      $(".header_target_leedoworld").attr("style","display:none;");
+
+    }else{
+      // Home
+      $(".header_target_home").attr("style","display:none;");
+      $(".header_target_launchapp").attr("style","display:block;");
+      $(".header_target_leedoworld").attr("style","display:block;");
+
+    }
+  }
+</script>

@@ -1,0 +1,515 @@
+
+/* snb */
+nav {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+nav ol li a {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 30px;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  font-size: var(--font-size-30);
+  text-align: left;
+}
+nav ol li a:hover {
+  color: var(--primary-active-color);
+}
+
+/* home */
+#staking {
+  background: linear-gradient(180deg, #22082e 43.65%, #10082e 100%);
+  position: relative;
+}
+#staking::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/star.png);
+  background-repeat: repeat;
+}
+#staking > div {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#staking > div > img.title {
+  width: 420px;
+  margin-bottom: 30px;
+}
+#staking > span {
+  position: absolute;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#staking > span.space-shuttle {
+  width: 10%;
+  max-width: 234px;
+  min-width: 124px;
+  animation-name: move1;
+  animation-duration: 1.6s;
+}
+#staking > span.bg-obj1 {
+  width: 11%;
+  max-width: 220px;
+  min-width: 124px;
+  left: 8%;
+  animation-name: move2;
+}
+
+@keyframes move1 {
+  0% {
+    left: 11%;
+    top: 23%;
+  }
+  100% {
+    left: 12%;
+    top: 22%;
+  }
+}
+@keyframes move2 {
+  0% {
+    bottom: 22%;
+  }
+  100% {
+    bottom: 21.2%;
+  }
+}
+@keyframes move3 {
+  0% {
+    bottom: 36%;
+  }
+  100% {
+    bottom: 35.2%;
+  }
+}
+
+.wallet-div {
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 150%;
+}
+
+.connect-btn {
+  position: static;
+  width: 256px;
+  height: 50px;
+  left: 60px;
+  top: 6px;
+
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  /* or 50px */
+  text-align: center;
+
+  /* white ffffff */
+  color: #ffffff;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.content-text1 {
+  margin-top: 110px;
+}
+
+.content-text1 > p {
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+
+  /* or 54px */
+  text-align: center;
+
+  /* white ffffff */
+  color: #ffffff;
+  margin: 0px;
+}
+
+.content-text1-btn {
+  margin-top: 30px;
+  padding: 0px;
+  position: static;
+  width: 322px;
+  height: 50px;
+  left: 60px;
+  top: 6px;
+
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  /* or 50px */
+  text-align: center;
+
+  /* white ffffff */
+  color: #ffffff;
+}
+
+.content-text2 {
+  margin-top: 60px;
+}
+
+.content-text2 > p {
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  /* or 54px */
+  text-align: center;
+
+  /* white ffffff */
+  color: #ffffff;
+}
+
+.content-text3 {
+  margin-top: 60px;
+}
+
+.content-text3 > p {
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  /* or 54px */
+  text-align: center;
+
+  /* white ffffff */
+  color: #ffffff;
+}
+
+.leedo-contract {
+  position: relative;
+  margin-top: 60px;
+
+  background: #ffffff;
+  box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  /* height: 252px; */
+  background: #ffffff;
+  color: black;
+
+  background-image: none;
+  z-index: 20;
+  padding: 40px;
+}
+
+.leedo-contract-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  height: 48px;
+  align-items: center;
+}
+
+.leedo-contract-content-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+
+  background: #6d0ab4;
+  border-radius: 100px;
+
+  width: 202px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.leedo-card {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.leedo-card-box {
+  background: var(--white);
+  width: 290px;
+  height: 210px;
+  color: black;
+}
+
+.leedo-card-box-container {
+  padding: 20px;
+}
+.leedo-card-box-title {
+  font-size: 32px;
+}
+.leedo-card-box-num {
+  position: relative;
+  top: 50px;
+  color: #6d0ab4;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+}
+.leedo-card-box-slash {
+  position: relative;
+  top: 50px;
+}
+.leedo-card-box-total {
+  position: relative;
+  top: 50px;
+  font-size: 24px;
+  color: #767676;
+}
+
+.leedo-card-box-bottom {
+  position: relative;
+  top: 50px;
+  font-weight: 400;
+  color: #767676;
+  margin-top: 10px;
+}
+
+.leedo-reward {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 317px;
+  background: var(--white);
+  color: black;
+}
+
+.leedo-reward-top {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+
+  font-size: 30px;
+}
+.leedo-reward-mid {
+  margin-bottom: 40px;
+}
+.leedo-reward-mid-title {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+}
+.leedo-reward-mid-num {
+  display: flex;
+  margin: auto;
+  font-family: Noto Sans KR;
+  justify-content: space-around;
+  font-size: 32px;
+  color: #6d0ab4;
+  font-weight: bold;
+}
+
+.leedo-reward-value {
+  width: 50%;
+}
+.leedo-reward-bottom-btn {
+  justify-content: center;
+  align-items: center;
+  padding: 6px 60px;
+
+  box-sizing: border-box;
+  box-shadow: 0px 6px 0px #400669;
+  border-radius: 100px;
+
+  /* width: 80px; */
+  height: 50px;
+
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  text-align: center;
+}
+
+#staking-checkin {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 716px;
+  background: var(--white);
+  color: black;
+  box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+}
+.staking-checkin-top {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+.staking-checkin-top-checked {
+  position: relative;
+  background: #ececec;
+  padding: 20px;
+  /* padding-bottom: 9px; */
+  width: 450px;
+  height: 66px;
+  font-size: 32px;
+}
+
+.label-cursor {
+  cursor: pointer;
+}
+
+.staking-checkin-top-checked-false {
+  position: relative;
+  background: #ececec;
+  padding: 20px;
+  /* padding-bottom: 9px; */
+  width: 450px;
+  height: 66px;
+  font-size: 32px;
+
+  display: none;
+}
+.staking-checkin-mid-content1 {
+  margin-top: 40px;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  color: #333333;
+}
+.staking-checkin-mid-content2 {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+  text-align: center;
+
+  /* gray-color 767676 */
+  color: #767676;
+
+  margin-bottom: 20px;
+}
+.staking-checkin-mid-cardlist {
+  display: inline-block;
+  width: 93%;
+  height: 400px;
+
+  /* light-gray-color ECECEC */
+  background: #ececec;
+
+  margin-bottom: 40px;
+}
+.deck-outside {
+  /* display: flex; */
+  overflow-y: auto;
+  flex-wrap: wrap;
+  max-height: 400px;
+}
+.deck {
+  display: flex;
+  /* flex-flow: row-reverse wrap; */
+  flex-wrap: wrap;
+  margin: 10px;
+
+  justify-content: center;
+}
+.card {
+  border-radius: 9px;
+  width: 175px;
+  height: auto;
+
+  padding: 3px 3px 3px 3px;
+  margin: 0px;
+}
+
+input:checked + div {
+  /* color: #ce113b; */
+  /* border: 0px; */
+  /* border-top: 2px solid #ffd300; */
+  /* border-bottom: 2px solid #ce113b; */
+  background: #ffffff;
+}
+.staking-checkin-bottom-btn {
+  width: 234px;
+  height: 62px;
+
+  font-family: SangSangAnt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 140%;
+  /* or 50px */
+  text-align: center;
+
+  /* white ffffff */
+  color: #ffffff;
+}
+
+.leedo-address {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  color: #767676;
+}
+
+progress {
+  -webkit-appearance: none;
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+}
+
+::-webkit-progress-bar {
+  background-color: rgba(196, 133, 154, 0.2);
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+}
+
+::-webkit-progress-value {
+  background-color: var(--primary-color);
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+}
+
+progress.staking-progress {
+  width: 70%;
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+}
+
+.Dashboard-content1-items-gray{
+  color: #767676;
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+}

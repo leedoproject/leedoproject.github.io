@@ -1,0 +1,796 @@
+body {
+  background: url(../img/home-bg-1.jpg) no-repeat top center / cover;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  animation: dropHeader 0.3s;
+}
+@keyframes dropHeader {
+  0% {
+    top: -5rem;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#lang ul {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* top banner */
+#top-banner > div {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  width: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+  font-size: 0;
+}
+#top-banner img {
+  width: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* snb 왼쪽메뉴 */
+nav {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  z-index: 100;
+  animation: nav 0.7s;
+}
+@keyframes nav {
+  0% {
+    left: -5rem;
+  }
+  100% {
+    left: 30px;
+  }
+}
+nav ol li {
+  position: relative;
+}
+nav ol li a {
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+  font-size: var(--font-size-24);
+  text-align: left;
+  transition: all 0.6s;
+  color: rgba(255, 255, 255, 0.8);
+}
+nav ol li a:hover {
+  font-size: var(--font-size-34);
+  color: rgba(255, 255, 255, 1);
+}
+nav ol li a:hover::before {
+  background: rgba(255, 255, 255, 1);
+}
+
+/* home */
+#home {
+  /*  background: url(../img/home-bg-1.jpg)no-repeat top center;
+  background-size: cover;*/
+  position: relative;
+  height: 850px;
+}
+#home .home-bg {
+  position: absolute;
+  top: 220px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: url(../img/home-bg-3.png) no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+#home .home-bg > img {
+  position: absolute;
+}
+#home .home-bg .hoem-bg-3 {
+  top: -170px;
+  left: 0;
+}
+#home .home-bg .hoem-bg-4 {
+  width: 50%;
+  max-width: 950px;
+  right: 0;
+  bottom: 0;
+}
+#home .home-bg .hoem-bg-5 {
+  bottom: 0;
+  left: 0;
+}
+
+#home .home-bg span {
+  position: absolute;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#home .home-bg span.space-shuttle {
+  width: 10%;
+  max-width: 234px;
+  min-width: 124px;
+  animation-name: move1;
+  animation-duration: 1.6s;
+}
+@keyframes move1 {
+  0% {
+    left: 11%;
+    top: -80px;
+  }
+  100% {
+    left: 12%;
+    top: -90px;
+  }
+}
+#home .home-bg span.bg-obj1 {
+  width: 11%;
+  max-width: 220px;
+  min-width: 124px;
+  left: 8%;
+  animation-name: move2;
+}
+@keyframes move2 {
+  0% {
+    top: 260px;
+  }
+  100% {
+    top: 270px;
+  }
+}
+#home .home-bg span.bg-obj2 {
+  width: 12%;
+  max-width: 252px;
+  min-width: 132px;
+  right: 6%;
+  animation-name: move3;
+}
+@keyframes move3 {
+  0% {
+    top: 172px;
+  }
+  100% {
+    top: 180px;
+  }
+}
+
+#home > .content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#home > .content > img.title {
+  width: 420px;
+  margin-bottom: 30px;
+}
+
+/* about */
+#about {
+  background: linear-gradient(180deg, #22082e 55%, #c47252 100%);
+}
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/star.png);
+  background-repeat: repeat;
+}
+#about img {
+  position: relative;
+  animation-duration: 1.4s;
+  animation-name: move4;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  width: 660px;
+  filter: drop-shadow(0px 0px 16px #22082e);
+}
+@keyframes move4 {
+  0% {
+    top: 40px;
+  }
+  100% {
+    top: 46px;
+  }
+}
+
+/* 리도토큰 */
+#token {
+  background: linear-gradient(180deg, #c47252 70.63%, #22082e 100%);
+}
+#token > span {
+  position: absolute;
+}
+#token > span.bg-obj1 {
+  max-width: 290px;
+  width: 30%;
+  top: 0;
+  left: 0;
+}
+#token > span.bg-obj2 {
+  max-width: 290px;
+  width: 30%;
+  top: 0;
+  right: 0;
+}
+#token > span.bg-obj3 {
+  max-width: 670px;
+  width: 40%;
+  bottom: 0;
+  left: 0;
+}
+#token > span.bg-obj4 {
+  max-width: 768px;
+  width: 40%;
+  bottom: 0;
+  right: 0;
+}
+#token p.sub-dec {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+#token .post-it {
+  position: relative;
+  width: 100%;
+  max-width: 658px;
+  padding: 50px 40px 40px 40px;
+  margin: 0 auto;
+  background: rgba(238, 188, 58, 0.98);
+  box-shadow: 0px 12px 4px rgba(0, 0, 0, 0.25);
+  text-align: left;
+  color: var(--bk-font-color);
+}
+#token .post-it::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 12px;
+  height: 39px;
+  width: 34px;
+  background: url(../img/pin.png) no-repeat center center / cover;
+}
+#token .post-it::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  right: 6px;
+  height: 39px;
+  width: 34px;
+  background: url(../img/pin.png) no-repeat center center / cover;
+}
+#token .post-it li {
+  position: relative;
+  padding-left: 15px;
+}
+#token .post-it li::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 8px;
+  height: 34px;
+  background: url(../img/dot.png) no-repeat center left;
+}
+#token .post-it li > span {
+  font-size: var(--font-size-26);
+}
+
+#token > .content > div {
+  position: relative;
+}
+#token > .content span.bg-obj {
+  width: 20%;
+  height: auto;
+  max-width: 110px;
+  max-height: 110px;
+  position: absolute;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#token > .content span.bg-obj1 {
+  animation-name: move5;
+}
+@keyframes move5 {
+  0% {
+    right: 8%;
+    top: -103%;
+  }
+  100% {
+    right: 9%;
+    top: -96%;
+  }
+}
+#token > .content span.bg-obj2 {
+  animation-name: move6;
+}
+@keyframes move6 {
+  0% {
+    left: 0;
+    top: -170%;
+  }
+  100% {
+    left: 1%;
+    top: -150%;
+  }
+}
+
+/* 로드맵 */
+#roadmap {
+  background: linear-gradient(180deg, #22082e 43.65%, #10082e 100%);
+  overflow-y: hidden;
+}
+#roadmap::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/star.png);
+  background-repeat: repeat;
+}
+#roadmap ol {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+#roadmap ol > li {
+  line-height: 1.6;
+  border-radius: 50px;
+  background: var(--secondary-color);
+  margin-bottom: 20px;
+  box-shadow: inset 3px 3px 6px rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 12px 4px rgba(0, 0, 0, 0.25));
+}
+#roadmap .complete li {
+  background: var(--secondary-dark-color);
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0px 12px 4px rgba(0, 0, 0, 0.25));
+}
+#roadmap .complete li > span {
+  position: relative;
+  padding: 0 10px;
+  color: var(--secondary-font-color);
+}
+#roadmap .complete li > span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  border-top: 1px solid var(--secondary-font-color);
+}
+#roadmap > span {
+  position: absolute;
+  animation-duration: 1.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  opacity: 0.6;
+}
+#roadmap > span.bg-obj1 {
+  animation-name: move7;
+  left: 10%;
+  top: 20%;
+  animation-duration: 20s;
+}
+#roadmap > span.bg-obj2 {
+  animation-name: move8;
+}
+#roadmap > span.bg-obj3 {
+  animation-name: move9;
+  animation-duration: 1.8s;
+}
+#roadmap > span.bg-obj4 {
+  animation-name: move10;
+  animation-duration: 1.6s;
+}
+#roadmap > span.bg-obj5 {
+  animation-name: move11;
+  animation-duration: 1.4s;
+}
+#roadmap > span.bg-obj6 {
+  animation-name: move12;
+}
+@keyframes move7 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes move8 {
+  0% {
+    left: 19%;
+    top: 41%;
+  }
+  100% {
+    left: 19.5%;
+    top: 40%;
+  }
+}
+@keyframes move9 {
+  0% {
+    left: 17%;
+    bottom: 26%;
+    transform: rotate(0deg);
+  }
+  100% {
+    left: 16.5%;
+    bottom: 25.5%;
+    transform: rotate(-4deg);
+  }
+}
+@keyframes move10 {
+  0% {
+    right: 20%;
+    top: 13%;
+    transform: rotate(0deg);
+  }
+  100% {
+    right: 20.3%;
+    top: 13.3%;
+    transform: rotate(-4deg);
+  }
+}
+@keyframes move11 {
+  0% {
+    right: 7%;
+    top: 45%;
+    transform: rotate(0deg);
+  }
+  100% {
+    right: 7.5%;
+    top: 44.4%;
+    transform: rotate(-10deg);
+  }
+}
+@keyframes move12 {
+  0% {
+    right: 14%;
+    bottom: 34%;
+    transform: rotate(0deg);
+  }
+  100% {
+    right: 15%;
+    bottom: 34.4%;
+    transform: rotate(-2deg);
+  }
+}
+
+.custom-shape-divider-bottom-1642947586 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom-1642947586 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 39px;
+  transform: rotateY(180deg);
+}
+.custom-shape-divider-bottom-1642947586 .shape-fill {
+  fill: var(--secondary-color);
+}
+
+/* FAQ */
+#faq {
+  background: var(--secondary-color);
+}
+#Accordion_wrap {
+  text-align: left;
+  color: var(--bk-font-color);
+  font-weight: 400;
+}
+#Accordion_wrap > div {
+  margin-bottom: 12px;
+}
+.que {
+  margin: 0 auto;
+  width: 700px;
+  background: var(--white);
+  position: relative;
+  padding: 22px 30px;
+  cursor: pointer;
+}
+.que::before {
+  width: 4%;
+  content: "Q";
+  display: inline-block;
+}
+.que > span {
+  width: 95%;
+  float: right;
+}
+.anw {
+  margin: 0 auto;
+  width: 700px;
+  background: var(--white);
+  display: none;
+  overflow: hidden;
+  padding: 0 30px 22px 30px;
+}
+.anw > span {
+  width: 95%;
+  float: right;
+  font-size: var(--font-size-16);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.anw::before {
+  width: 4%;
+  content: "A";
+  display: inline-block;
+}
+.anw > span > ol li p {
+  margin-bottom: 8px;
+}
+.anw > span > ol li p > img {
+  width: 50%;
+}
+.anw > span > ol li p > span {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1170px) {
+  #token > span.bg-obj1,
+  #token > span.bg-obj2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    min-width: 320px;
+  }
+  header {
+    position: absolute;
+  }
+  header input[id="hamburger-menu"] + label span {
+    background: var(--purple-color);
+  }
+  nav {
+    position: fixed;
+    top: 49.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  @keyframes nav {
+    0% {left: 50%;}
+    100% { left: 50%;}
+  }
+  nav ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav ol li a {
+    padding: 7px 6px;
+    font-size: var(--font-size-24);
+    text-align: center;
+  }
+  nav ol li a::before {
+    display: none;
+  }
+
+  /* top banner */
+  #top-banner img {
+    height: 40px;
+    width: auto;
+  }
+
+  #home {
+    display: flex;
+    flex-direction: column;
+    height: 540px;
+    padding-top: 87px;
+  }
+  #home .content {
+    height: 100%;
+    padding: 0 15px;
+  }
+  #home .content img.title {
+    width: 40%;
+    min-width: 220px;
+  }
+  #home .home-bg span img {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  #home .home-bg span.space-shuttle {
+    left: 50%;
+    transform: translateX(-220%);
+  }
+  #home .home-bg span.bg-obj1 {
+    left: 50%;
+    transform: translateX(-220%);
+  }
+  #home .home-bg span.bg-obj2 {
+    right: 50%;
+    transform: translateX(220%);
+  }
+  @keyframes move1 {
+    0% {  top: -80px;  }
+    100% {  top: -90px;  }
+  }
+  @keyframes move2 {
+    0% {  bottom: 22%;}
+    100% {bottom: 21.2%;}
+  }
+  @keyframes move3 {
+    0% {  bottom: 36%;}
+    100% {bottom: 35.2%;}
+  }
+
+  section {
+    padding-top: 25px;
+  }
+  #about img {
+    width: 80%;
+    max-width: 320px;
+  }
+  #about::before {
+    background-size: 60%;
+  }
+  @keyframes move4 {
+    0% {top: 20px;}
+    100% {top: 26px;}
+  }
+
+  #token p.sub-dec {
+    margin-top: 30px;
+  }
+  #token .post-it {
+    padding: 30px 15px 15px;
+  }
+  #token .post-it::before,
+  #token .post-it::after {
+    height: 30px;
+    width: 26px;
+  }
+  #token .post-it li::before {
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background-size: cover;
+  }
+  #token .post-it li > span {
+    font-size: var(--font-size-22);
+  }
+  #token > .content > p.obj > span {
+    display: none;
+  }
+
+  #roadmap::before {
+    background-size: 60%;
+  }
+  #roadmap ol {
+    max-width: 400px;
+  }
+
+  #roadmap > span.bg-obj1 {
+    left: 15%;
+  }
+  @keyframes move7 {
+    0% {transform: translateX(-100%) rotate(0deg);}
+    100% {  transform: translateX(-100%) rotate(-360deg);}
+  }
+  @keyframes move8 {
+    0% {
+      left: 19%;
+      top: 41%;
+      transform: translateX(-70%);
+    }
+    100% {
+      left: 19.5%;
+      top: 40%;
+      transform: translateX(-70%);
+    }
+  }
+  @keyframes move9 {
+    0% {
+      left: 17%;
+      bottom: 26%;
+      transform: translateX(-120%) rotate(0deg);
+    }
+    100% {
+      left: 16.5%;
+      bottom: 25.5%;
+      transform: translateX(-120%) rotate(-4deg);
+    }
+  }
+  @keyframes move10 {
+    0% {
+      right: 20%;
+      top: 13%;
+      transform: translateX(120%) rotate(0deg);
+    }
+    100% {
+      right: 20.3%;
+      top: 13.3%;
+      transform: translateX(120%) rotate(-4deg);
+    }
+  }
+  @keyframes move11 {
+    0% {
+      right: 9%;
+      top: 45%;
+      transform: translateX(90%) rotate(0deg);
+    }
+    100% {
+      right: 9.5%;
+      top: 44.4%;
+      transform: translateX(90%) rotate(-10deg);
+    }
+  }
+  @keyframes move12 {
+    0% {
+      right: 20%;
+      bottom: 34%;
+      transform: translateX(110%) rotate(0deg);
+    }
+    100% {
+      right: 21%;
+      bottom: 34.4%;
+      transform: translateX(110%) rotate(-2deg);
+    }
+  }
+
+  .que {
+    width: 100%;
+    max-width: 700px;
+    padding: 18px 15px;
+    overflow: auto;
+  }
+  .que::before {
+    width: 6%;
+  }
+  .que > span {
+    width: 90%;
+  }
+  .anw {
+    width: 100%;
+    max-width: 700px;
+    padding: 0 15px 18px 15px;
+  }
+  .anw::before {
+    width: 6%;
+  }
+  .anw > span {
+    width: 90%;
+    font-size: var(--font-size-14);
+  }
+}

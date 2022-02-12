@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Primary Meta Tags -->
+    <title>Leedo Project</title>
+    <meta name="title" content="Leedo Project | blockchain game community" />
+    <meta name="description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta
+      name="keywords"
+      content="리도 프로젝트, 리도 월드, 리도 NFT, 리도 메타버스, 리도 프로젝트란? 블록체인 게임 커뮤니티, Leedo project, Leedo World, Leedo NFT, Leedo Metaverse, What is Leedo project?"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leedoproject.com/" />
+    <meta property="og:title" content="Leedo Project" />
+    <meta property="og:description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta property="og:image" content="LEEDO_NEW_BANNER_IMAGE" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://leedoproject.com/" />
+    <meta property="twitter:title" content="Leedo Project" />
+    <meta property="twitter:description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta property="twitter:image" content="LEEDO_NEW_IMAGE_256X256" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Leedo Project" />
+    <meta name="twitter:description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta name="twitter:image" content="LEEDO_NEW_IMAGE_256X256" />
+    <meta name="twitter:site" content="https://leedoproject.com/" />
+
+    <title>LEEDO | Leedo World</title>
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-ui-1.13.0-min.js"></script>
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/leedoworld.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#header").load("./header.html");
+        $("#sidebar").load("./sidebar.html");
+      });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="../js/googletagmanager.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TLLPTY27DK");
+    </script>
+  </head>
+
+  <body id="leedoworld">
+    <aside id="sidebar" class="sidebar"></aside>
+
+    <div class="wrap">
+      <header id="header"></header>
+
+      <section>
+        <div id="tabs">
+          <nav>
+            <ul id="tabs-bg" class="notosanskr">
+              <li>
+                <a href="#information"><img src="../img/icon-Information.svg" alt="" data-langNum="Lw_Left_menu_1" />Information</a>
+              </li>
+              <li>
+                <a href="#dashboard"><img src="../img/icon-Dashboard.svg" alt="" data-langNum="Lw_Left_menu_2" />Dashboard</a>
+              </li>
+              <li>
+                <a href="#utility"><img src="../img/icon-utility.svg" alt="" data-langNum="Lw_Left_menu_3" />Utility</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="tab-container">
+            <div id="metaverse-loading"><div class="spinner"></div></div>
+
+            <div>
+              <div class="address">
+                <div class="address-network" id="address-network">
+                  <p>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 9.34784 20.9464 6.8043 19.0711 4.92893C17.1957 3.05357 14.6522 2 12 2C9.34784 2 6.8043 3.05357 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C6.8043 20.9464 9.34784 22 12 22V22ZM10.5 16.5C10.5 16.1022 10.658 15.7206 10.9393 15.4393C11.2206 15.158 11.6022 15 12 15C12.3978 15 12.7794 15.158 13.0607 15.4393C13.342 15.7206 13.5 16.1022 13.5 16.5C13.5 16.8978 13.342 17.2794 13.0607 17.5607C12.7794 17.842 12.3978 18 12 18C11.6022 18 11.2206 17.842 10.9393 17.5607C10.658 17.2794 10.5 16.8978 10.5 16.5ZM11.016 6.82C11.0577 6.58944 11.1791 6.38085 11.359 6.23065C11.5388 6.08045 11.7657 5.99817 12 5.99817C12.2343 5.99817 12.4612 6.08045 12.641 6.23065C12.8209 6.38085 12.9423 6.58944 12.984 6.82L13 7V12L12.984 12.18C12.9423 12.4106 12.8209 12.6191 12.641 12.7694C12.4612 12.9196 12.2343 13.0018 12 13.0018C11.7657 13.0018 11.5388 12.9196 11.359 12.7694C11.1791 12.6191 11.0577 12.4106 11.016 12.18L11 12V7L11.016 6.82Z"
+                        fill="#F8C40C"
+                      />
+                    </svg>
+                    <span data-langNum="LW_Info_connect_wallet">지갑을 Matic Polygon 메인넷으로 전환하세요</span>
+                  </p>
+                  <a href="../index.html#faq" class="caption" data-langNum="LW_Info_connect_wallet_caution">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.99996 1.66667C14.6025 1.66667 18.3333 5.39834 18.3333 10C18.3333 14.6017 14.6025 18.3333 9.99996 18.3333C5.39746 18.3333 1.66663 14.6017 1.66663 10C1.66663 5.39834 5.39746 1.66667 9.99996 1.66667ZM9.99996 3.05584C6.17079 3.05584 3.05579 6.17084 3.05579 10C3.05579 13.8292 6.17079 16.9442 9.99996 16.9442C13.8291 16.9442 16.9441 13.8292 16.9441 10C16.9441 6.17084 13.8291 3.05584 9.99996 3.05584ZM9.99996 12.9167C10.221 12.9167 10.4329 13.0045 10.5892 13.1608C10.7455 13.317 10.8333 13.529 10.8333 13.75C10.8333 13.971 10.7455 14.183 10.5892 14.3393C10.4329 14.4955 10.221 14.5833 9.99996 14.5833C9.77895 14.5833 9.56698 14.4955 9.4107 14.3393C9.25442 14.183 9.16663 13.971 9.16663 13.75C9.16663 13.529 9.25442 13.317 9.4107 13.1608C9.56698 13.0045 9.77895 12.9167 9.99996 12.9167ZM9.99996 5.62501C10.6077 5.62501 11.1906 5.86645 11.6204 6.29622C12.0502 6.72599 12.2916 7.30888 12.2916 7.91667C12.2916 8.75834 12.0441 9.22834 11.4158 9.88251L11.275 10.025C10.7566 10.5433 10.625 10.7633 10.625 11.25C10.625 11.4158 10.5591 11.5747 10.4419 11.6919C10.3247 11.8092 10.1657 11.875 9.99996 11.875C9.8342 11.875 9.67523 11.8092 9.55802 11.6919C9.44081 11.5747 9.37496 11.4158 9.37496 11.25C9.37496 10.4083 9.62246 9.93834 10.2508 9.28417L10.3916 9.14167C10.91 8.62334 11.0416 8.40334 11.0416 7.91667C11.0408 7.65023 10.9378 7.39426 10.754 7.20138C10.5702 7.00851 10.3195 6.8934 10.0534 6.87974C9.78729 6.86608 9.52608 6.9549 9.32348 7.12793C9.12087 7.30097 8.99227 7.54506 8.96413 7.81001L8.95829 7.91667C8.95829 8.08243 8.89244 8.2414 8.77523 8.35861C8.65802 8.47582 8.49905 8.54167 8.33329 8.54167C8.16753 8.54167 8.00856 8.47582 7.89135 8.35861C7.77414 8.2414 7.70829 8.08243 7.70829 7.91667C7.70829 7.30888 7.94974 6.72599 8.37951 6.29622C8.80928 5.86645 9.39217 5.62501 9.99996 5.62501Z"
+                      />
+                    </svg>
+                    <span data-langNum="LW_Info_connect_wallet_caution">메타마스크 지갑에 네트워크 추가하는 방법</span>
+                  </a>
+                </div>
+
+                <div class="address-btn">
+                  <button class="connect-btn" type="button" name="button" onclick="connectWallet()" data-langNum="LW_Dash_connect">지갑 연결</button>
+                </div>
+
+                <div class="address-myaddress">
+                  <div class="address-myaddress-network">
+                    <span class="address-myaddress-text">Network</span>
+                    <span id="myaddress-network" class="myaddress-network caption"></span>
+                  </div>
+
+                  <div class="address-myaddress-div">
+                    <span class="address-myaddress-text">My address</span>
+                    <span id="my-address" class="my-address caption"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-wrap">
+                <div id="information" class="tab">
+                  <div>
+                    <h2 class="margin-b-20 zoomin" data-langNum="LW_Info_Welcome_1">LEEDO World에 오신 것을 환영합니다!</h2>
+                    <p class="margin-b-50 zoomin" data-langNum="LW_Info_Welcome_2">
+                      많은 게임들이 입주할 게임센터가 건설 중이며 게임 외의 다양한 시설들이 LEEDO World에 건설될 예정입니다.<br />
+                      누구나 게임이나 다른 프로젝트를 LEEDO World에 만들고 리도를 벌 수 있으며<br />
+                      LEEDO World 커뮤니티는 게임에 참여해서 LEEDO를 벌 수 있습니다.
+                    </p>
+                    <p class="margin-b-30 zoomin" data-langNum="LW_Info_Welcome_3">LEEDO World가 더 궁금하시다면 LEEDO World 커뮤니티에 참여하세요!</p>
+                    <button type="button" name="button" class="btn-discord zoomin" onclick="gotoDiscord()">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M20.303 5.59198C19.9786 5.1019 19.5192 4.72702 18.9744 4.5091C17.7917 4.03486 16.7746 3.71806 15.8645 3.5395C15.2261 3.4147 14.5939 3.72862 14.2901 4.31998L14.2142 4.46782C13.5403 4.39342 12.8246 4.36846 12.0096 4.3891C11.1739 4.36894 10.4558 4.39342 9.78097 4.46782L9.70561 4.31998C9.40177 3.72862 8.76865 3.41518 8.13169 3.53998C7.22161 3.71806 6.20401 4.03486 5.02177 4.50958C4.47745 4.7275 4.01809 5.1019 3.69313 5.59246C1.42705 9.01534 0.539048 12.7075 0.978728 16.8806C0.994088 17.027 1.07569 17.1581 1.20001 17.2363C2.94337 18.3355 4.45201 19.0881 5.94769 19.6056C6.57313 19.824 7.26673 19.5797 7.63585 19.0157L8.29393 18.0072C7.76977 17.8094 7.25809 17.5752 6.76753 17.2953C6.53761 17.1643 6.45745 16.871 6.58849 16.6411C6.71953 16.4102 7.01281 16.3291 7.24321 16.4621C8.70289 17.2944 10.3531 17.7345 12.0154 17.7345C13.6776 17.7345 15.3278 17.2944 16.7875 16.4621C17.0174 16.3291 17.3107 16.4102 17.4422 16.6411C17.5733 16.871 17.4931 17.1643 17.2632 17.2953C16.7563 17.5848 16.2264 17.8257 15.6835 18.0269L16.3608 19.0358C16.6397 19.451 17.1 19.6872 17.5742 19.6872C17.7288 19.6872 17.8848 19.6617 18.0365 19.6099C19.5365 19.092 21.048 18.3384 22.7952 17.2368C22.9195 17.1585 23.0011 17.027 23.0165 16.8811C23.4571 12.7075 22.5691 9.01486 20.303 5.59198ZM8.93185 13.9118C8.00737 13.9118 7.24657 12.9379 7.24657 11.7542C7.24657 10.5705 8.00737 9.59662 8.93185 9.59662C9.85633 9.59662 10.6171 10.5705 10.6171 11.7542C10.6171 12.9379 9.85633 13.9118 8.93185 13.9118ZM15.1685 13.8993C14.2526 13.8993 13.499 12.9197 13.499 11.7288C13.499 10.5379 14.2526 9.55822 15.1685 9.55822C16.0843 9.55822 16.8379 10.5379 16.8379 11.7288C16.8379 12.9197 16.0843 13.8993 15.1685 13.8993Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <span data-langNum="LW_Info_Discord">LEEDO 디스코드로 가기</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div id="dashboard" class="tab">
+                  <div class="margin-b-50">
+                    <div class="balance zoomin">
+                      <p class="margin-b-30" data-langNum="LW_Dash_1">나의 LEEDO 밸런스</p>
+                      <h5 class="number" id="my_leedo_balance">0</h5>
+                      <span>LEEDO</span>
+                    </div>
+                    <div class="zoomin">
+                      <p data-langNum="LW_Dash_2">Leedorian 메타버스<br />컨트랙트 주소</p>
+                      <div id="leedo-address" class="caption2"></div>
+                    </div>
+                    <div class="zoomin">
+                      <p data-langNum="LW_Dash_3">LEEDO ERC-20 토큰<br />컨트랙트 주소</p>
+                      <div id="leedo-erc20-address" class="caption2"></div>
+                      <button class="Dashboard-content1-item4-btn small" id="add-token-btn" disabled type="button" name="button" onclick="RequestAddToken()" data-langNum="LW_Dash_3_button">
+                        지갑에 LEEDO 추가
+                      </button>
+                    </div>
+                  </div>
+
+                  <p class="subtitle margin-b-20" data-langNum="LW_Dash_4">Arrived Cards</p>
+                  <div>
+                    <div class="arrivedcards zoomin" style="height: 440px">
+                      <div class="margin-b-20" id="no-card-div" style="display: none">
+                        <p data-langNum="LW_Dash_4_info1">There are no cards arrived.</p>
+                      </div>
+                      <div id="div-arrived-cards" style="margin-bottom: 10px"></div>
+                      <div id="deck-outside" class="cardlist deck-outside">
+                        <div id="deck-metaverse" class="deck"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="utility" class="tab">
+                  <div class="Utility">
+                    <p class="zoomin" data-langNum="LA_Ut_info">
+                      LEEDO 프로젝트의 커뮤니티에서 만들어진 다양한 유틸리티 공간입니다.<br />
+                      LEEDO 프로젝트에 필요한 유틸리티를 이곳에 추가하고 싶으시거나 유틸리티에 대한 아이디어가 있다면 디스코드로 오셔서 요청해주세요.
+                    </p>
+                    <div class="Utility-content1 zoomin">
+                      <div class="Utility-content1-contain">
+                        <div class="Utility-content1-text">
+                          <p class="Utility-content1-text1">Morphed Squid Game Card</p>
+                          <span class="Utility-content1-text2 caption"> LEEDO NFT 카드 번호(ID)를 입력해서 나만의 카드를 만들어 보아요.. </span>
+                        </div>
+                        <div>
+                          <button class="Utility-content1-btn" type="button" name=" button" onclick="goMorph()" data-langNum="LA_Ut_button">이동</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      $(function () {
+        $("#tabs").tabs({ active: 0 });
+      });
+    </script>
+    <script src="../js/1.2.11-web3-min.js"></script>
+    <script src="../js/5.2-umd-min.js" type="application/javascript"></script>
+    <script src="../contractabi/leedo_nft_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedo_valut_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedo_erc20_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedo_util_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedorian_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedorian_erc20_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/contract_func.js" type=" text/javascript"></script>
+    <script src="../js/utils.js" type=" text/javascript"></script>
+    <script src="../js/dapp_util.js" type=" text/javascript"></script>
+    <script src="../locales/lang_ko.js" type="text/javascript"></script>
+    <script src="../locales/lang_en.js" type="text/javascript"></script>
+    <script src="../locales/locales.js" type="text/javascript"></script>
+    <script src="../js/leedoworld.js" type="text/javascript"></script>
+  </body>
+</html>

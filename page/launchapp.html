@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Primary Meta Tags -->
+    <title>Leedo Project</title>
+    <meta name="title" content="Leedo Project | blockchain game community" />
+    <meta name="description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta
+      name="keywords"
+      content="리도 프로젝트, 리도 월드, 리도 NFT, 리도 메타버스, 리도 프로젝트란? 블록체인 게임 커뮤니티, Leedo project, Leedo World, Leedo NFT, Leedo Metaverse, What is Leedo project?"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://leedoproject.com/" />
+    <meta property="og:title" content="Leedo Project" />
+    <meta property="og:description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta property="og:image" content="LEEDO_NEW_BANNER_IMAGE" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://leedoproject.com/" />
+    <meta property="twitter:title" content="Leedo Project" />
+    <meta property="twitter:description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta property="twitter:image" content="LEEDO_NEW_IMAGE_256X256" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Leedo Project" />
+    <meta name="twitter:description" content="Leedo Project is building a unique metaverse where the blockchain game begins and the community gathers." />
+    <meta name="twitter:image" content="LEEDO_NEW_IMAGE_256X256" />
+    <meta name="twitter:site" content="https://leedoproject.com/" />
+
+    <title>LEEDO</title>
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/jquery-ui-1.13.0-min.js"></script>
+
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/launchapp.css" />
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#header").load("./header.html");
+        $("#sidebar").load("./sidebar.html");
+      });
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="../js/googletagmanager.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-TLLPTY27DK");
+    </script>
+  </head>
+
+  <body>
+    <aside id="sidebar" class="sidebar"></aside>
+    <div class="wrap">
+      <header id="header"></header>
+
+      <section id="launchapp">
+        <div id="tabs">
+          <nav>
+            <ul id="tabs-bg">
+              <li>
+                <a href="#information"
+                  ><svg xmlns=" http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 -2 16 16" fill="none">
+                    <path
+                      d="M7.03333 1.68866C7.30384 1.46068 7.64623 1.33564 8 1.33564C8.35377 1.33564 8.69616 1.46068 8.96667 1.68866L13.4667 5.48533C13.8053 5.77 14 6.18933 14 6.632V13.1667C14 13.4761 13.8771 13.7728 13.6583 13.9916C13.4395 14.2104 13.1428 14.3333 12.8333 14.3333H10.8333C10.5239 14.3333 10.2272 14.2104 10.0084 13.9916C9.78958 13.7728 9.66667 13.4761 9.66667 13.1667V9.83333C9.66667 9.70072 9.61399 9.57354 9.52022 9.47978C9.42645 9.38601 9.29927 9.33333 9.16667 9.33333H6.83333C6.70073 9.33333 6.57355 9.38601 6.47978 9.47978C6.38601 9.57354 6.33333 9.70072 6.33333 9.83333V13.1667C6.33333 13.4761 6.21042 13.7728 5.99162 13.9916C5.77283 14.2104 5.47609 14.3333 5.16667 14.3333H3.16667C3.01346 14.3333 2.86175 14.3032 2.7202 14.2445C2.57866 14.1859 2.45004 14.1 2.34171 13.9916C2.23337 13.8833 2.14744 13.7547 2.08881 13.6131C2.03018 13.4716 2 13.3199 2 13.1667V6.63133C2 6.18933 2.19467 5.77 2.53333 5.48466L7.03333 1.68866Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Information
+                </a>
+              </li>
+              <li>
+                <a href="#dashboard"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 -2 16 16" fill="none">
+                    <path
+                      d="M2.66667 8.66667H6.66667C7.03333 8.66667 7.33333 8.36667 7.33333 8V2.66667C7.33333 2.3 7.03333 2 6.66667 2H2.66667C2.3 2 2 2.3 2 2.66667V8C2 8.36667 2.3 8.66667 2.66667 8.66667ZM2.66667 14H6.66667C7.03333 14 7.33333 13.7 7.33333 13.3333V10.6667C7.33333 10.3 7.03333 10 6.66667 10H2.66667C2.3 10 2 10.3 2 10.6667V13.3333C2 13.7 2.3 14 2.66667 14ZM9.33333 14H13.3333C13.7 14 14 13.7 14 13.3333V8C14 7.63333 13.7 7.33333 13.3333 7.33333H9.33333C8.96667 7.33333 8.66667 7.63333 8.66667 8V13.3333C8.66667 13.7 8.96667 14 9.33333 14ZM8.66667 2.66667V5.33333C8.66667 5.7 8.96667 6 9.33333 6H13.3333C13.7 6 14 5.7 14 5.33333V2.66667C14 2.3 13.7 2 13.3333 2H9.33333C8.96667 2 8.66667 2.3 8.66667 2.66667Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Dashboard</a
+                >
+              </li>
+              <li>
+                <a href="#staking">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 -1 16 16" fill="none">
+                    <path
+                      d="M8 14.6667C4.318 14.6667 1.33333 11.682 1.33333 8C1.33333 4.318 4.318 1.33333 8 1.33333C11.682 1.33333 14.6667 4.318 14.6667 8C14.6667 11.682 11.682 14.6667 8 14.6667ZM8 5.17133L5.17133 8L8 10.8287L10.8287 8L8 5.17133Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Staking</a
+                >
+              </li>
+              <li>
+                <a href="#utility">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 -1 16 16" fill="none">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8 0.666656C3.95 0.666656 0.666668 3.94999 0.666668 7.99999C0.666668 12.05 3.95 15.3333 8 15.3333C12.05 15.3333 15.3333 12.05 15.3333 7.99999C15.3333 3.94999 12.05 0.666656 8 0.666656ZM8.66667 10.6667C8.66667 10.8435 8.59643 11.013 8.47141 11.1381C8.34638 11.2631 8.17681 11.3333 8 11.3333C7.82319 11.3333 7.65362 11.2631 7.5286 11.1381C7.40357 11.013 7.33333 10.8435 7.33333 10.6667V8.66666H5.33333C5.15652 8.66666 4.98695 8.59642 4.86193 8.47139C4.73691 8.34637 4.66667 8.1768 4.66667 7.99999C4.66667 7.82318 4.73691 7.65361 4.86193 7.52858C4.98695 7.40356 5.15652 7.33332 5.33333 7.33332H7.33333V5.33332C7.33333 5.15651 7.40357 4.98694 7.5286 4.86192C7.65362 4.73689 7.82319 4.66666 8 4.66666C8.17681 4.66666 8.34638 4.73689 8.47141 4.86192C8.59643 4.98694 8.66667 5.15651 8.66667 5.33332V7.33332H10.6667C10.8435 7.33332 11.013 7.40356 11.1381 7.52858C11.2631 7.65361 11.3333 7.82318 11.3333 7.99999C11.3333 8.1768 11.2631 8.34637 11.1381 8.47139C11.013 8.59642 10.8435 8.66666 10.6667 8.66666H8.66667V10.6667Z"
+                      fill="white"
+                    />
+                  </svg>
+                  Utility</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <div class="tab-container">
+            <div id="stake-loading"><div class="spinner"></div></div>
+
+            <div>
+              <div class="address">
+                <span class="address-network block" id="address-network">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 22C14.6522 22 17.1957 20.9464 19.0711 19.0711C20.9464 17.1957 22 14.6522 22 12C22 9.34784 20.9464 6.8043 19.0711 4.92893C17.1957 3.05357 14.6522 2 12 2C9.34784 2 6.8043 3.05357 4.92893 4.92893C3.05357 6.8043 2 9.34784 2 12C2 14.6522 3.05357 17.1957 4.92893 19.0711C6.8043 20.9464 9.34784 22 12 22V22ZM10.5 16.5C10.5 16.1022 10.658 15.7206 10.9393 15.4393C11.2206 15.158 11.6022 15 12 15C12.3978 15 12.7794 15.158 13.0607 15.4393C13.342 15.7206 13.5 16.1022 13.5 16.5C13.5 16.8978 13.342 17.2794 13.0607 17.5607C12.7794 17.842 12.3978 18 12 18C11.6022 18 11.2206 17.842 10.9393 17.5607C10.658 17.2794 10.5 16.8978 10.5 16.5ZM11.016 6.82C11.0577 6.58944 11.1791 6.38085 11.359 6.23065C11.5388 6.08045 11.7657 5.99817 12 5.99817C12.2343 5.99817 12.4612 6.08045 12.641 6.23065C12.8209 6.38085 12.9423 6.58944 12.984 6.82L13 7V12L12.984 12.18C12.9423 12.4106 12.8209 12.6191 12.641 12.7694C12.4612 12.9196 12.2343 13.0018 12 13.0018C11.7657 13.0018 11.5388 12.9196 11.359 12.7694C11.1791 12.6191 11.0577 12.4106 11.016 12.18L11 12V7L11.016 6.82Z"
+                      fill="#F8C40C"
+                    />
+                  </svg>
+                  <span data-langNum="LA_Info_connect_wallet">지갑을 이더리움 메인넷으로 전환하세요</span>
+                </span>
+
+                <span class="address-btn">
+                  <button class="Dashboard-content2-item1-claim-btn connect-btn" type="button" name=" button" onclick="connectWallet()" data-langNum="LA_Dash_connect">지갑 연결</button>
+                </span>
+
+                <div class="address-myaddress">
+                  <div class="address-myaddress-network">
+                    <span class="address-myaddress-text">Network</span>
+                    <span id="myaddress-network" class="myaddress-network caption"></span>
+                  </div>
+
+                  <div class="address-myaddress-div">
+                    <span class="address-myaddress-text">My address</span>
+                    <span id="my-address" class="my-address caption"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-wrap">
+                <div id="information" class="tab">
+                  <div class="Information-content1 zoomin">
+                    <span class="Information-content1-text1" data-langNum="LA_Info_welcome_1">
+                      안녕하세요. 리도 월드 카운터입니다.<br />
+                      리도 월드로의 체크인을 도와드리며 리도 월드의 초대장인 리도 NFT 카드를 소지한 경우에만 체크인이 가능합니다.<br />
+                    </span>
+                    <span class="Information-content1-text2 caption">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9.96085 1.66666C5.38752 1.66666 1.66669 5.40499 1.66669 9.99999C1.66669 14.595 5.40502 18.3333 10 18.3333C14.595 18.3333 18.3334 14.595 18.3334 9.99999C18.3334 5.40499 14.5775 1.66666 9.96085 1.66666ZM10 16.6667C6.32419 16.6667 3.33335 13.6758 3.33335 9.99999C3.33335 6.32416 6.30585 3.33332 9.96085 3.33332C13.6592 3.33332 16.6667 6.32416 16.6667 9.99999C16.6667 13.6758 13.6759 16.6667 10 16.6667Z"
+                          fill="#767676"
+                        />
+                        <path d="M9.16669 5.83334H10.8334V11.6667H9.16669V5.83334ZM9.16669 12.5H10.8334V14.1667H9.16669V12.5Z" fill="#767676" />
+                      </svg>
+                      <span data-langNum="LA_Info_welcome_caution"
+                        >체크인 없이 리도 월드의 입장도 가능하지만 리도 토큰의 보상은 주어지지 않으며 리도 월드의 서비스 이용에 제한이 있을 수 있습니다.</span
+                      >
+                    </span>
+                  </div>
+
+                  <div class="zoomin">
+                    <button class="Information-content2-btn" onclick="goOpenSea()">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M2.39999 13.68H7.19999C7.24799 13.68 7.29599 13.632 7.34399 13.632C7.39199 13.536 7.48799 13.44 7.53599 13.344C7.96799 12.672 8.30399 11.904 8.44799 11.328C8.78399 9.98401 8.11199 7.82401 7.29599 6.04801C7.24799 5.95201 7.10399 5.90401 7.00799 6.04801L2.35199 13.296L2.25599 13.44C2.20799 13.536 2.30399 13.68 2.39999 13.68Z"
+                          fill="white"
+                        />
+                        <path
+                          d="M22.848 14.592L17.376 16.176C17.328 16.176 17.328 16.176 17.28 16.224C16.704 16.896 16.176 17.328 16.08 17.424C15.744 17.712 15.312 17.856 14.88 17.856H12.912V15.84H14.496C14.544 15.84 14.592 15.84 14.592 15.792L14.784 15.6C14.88 15.504 14.976 15.408 15.12 15.312C15.216 15.216 15.264 15.168 15.36 15.072C15.456 14.976 15.504 14.928 15.6 14.832C15.744 14.688 15.84 14.544 15.984 14.4C16.08 14.304 16.176 14.208 16.224 14.064C16.32 13.968 16.416 13.824 16.464 13.728C16.512 13.632 16.608 13.536 16.656 13.44C16.704 13.344 16.752 13.248 16.8 13.152C16.944 12.912 17.088 12.672 17.184 12.384C17.232 12.24 17.28 12.144 17.328 12C17.376 11.856 17.424 11.76 17.424 11.616C17.472 11.328 17.52 10.992 17.472 10.704C17.472 10.608 17.472 10.512 17.424 10.416C17.424 10.368 17.424 10.272 17.376 10.224C17.328 9.936 17.184 9.648 17.088 9.312C17.04 9.216 16.992 9.072 16.944 8.976C16.848 8.736 16.704 8.544 16.56 8.304C16.512 8.20799 16.464 8.16 16.416 8.064C16.32 7.92 16.176 7.728 16.08 7.584C15.984 7.488 15.888 7.344 15.792 7.248C15.696 7.152 15.6 7.008 15.504 6.912C15.168 6.528 14.784 6.192 14.496 5.856C14.448 5.808 14.352 5.76 14.304 5.664C14.064 5.424 13.824 5.232 13.632 5.088C13.536 4.992 13.44 4.944 13.392 4.896C13.296 4.848 13.248 4.752 13.152 4.752H13.104L12.912 4.8V3.072C12.912 2.784 12.816 2.544 12.624 2.352C12.432 2.16 12.192 2.064 11.904 2.064C11.328 2.064 10.896 2.544 10.896 3.072V4.224L10.8 4.176L10.512 4.08L10.272 4.032L8.30402 3.504C8.20802 3.504 8.16002 3.552 8.20802 3.648L8.54402 4.224C8.59202 4.32 8.59202 4.368 8.64002 4.464C8.68802 4.56 8.73602 4.656 8.78402 4.8C8.83202 4.896 8.88002 4.992 8.92802 5.088C9.02402 5.328 9.12002 5.568 9.26402 5.808C9.36002 6 9.40802 6.144 9.45602 6.336C9.64802 6.816 9.79202 7.296 9.93602 7.776C9.98402 7.92 10.032 8.112 10.08 8.256V8.352C10.128 8.592 10.176 8.832 10.224 9.072C10.272 9.216 10.272 9.408 10.272 9.552C10.272 9.744 10.32 9.888 10.32 10.08C10.32 10.224 10.32 10.416 10.32 10.56C10.32 10.992 10.272 11.376 10.176 11.712C10.128 11.808 10.128 11.952 10.08 12.048C10.032 12.192 9.98402 12.288 9.93602 12.432C9.88802 12.528 9.88802 12.576 9.84002 12.672C9.64802 13.104 9.40802 13.536 9.21602 13.968C8.88002 14.592 8.54402 15.12 8.30402 15.456C8.25602 15.504 8.25602 15.552 8.20802 15.6C8.11202 15.696 8.20802 15.84 8.35202 15.84H10.896V17.856H8.30402C7.63202 17.856 6.96002 17.472 6.67202 16.848C6.52802 16.512 6.43202 16.176 6.48002 15.84C6.48002 15.744 6.43202 15.648 6.28802 15.648H1.10402C1.00802 15.648 0.960022 15.744 0.960022 15.84V15.936C0.960022 19.248 3.64802 21.936 6.96002 21.936H16.272C18.528 21.936 19.488 19.344 20.832 17.52C21.36 16.8 22.56 16.224 22.944 16.08C22.992 16.032 23.04 15.984 23.04 15.936V14.784C23.04 14.64 22.944 14.592 22.848 14.592Z"
+                          fill="white"
+                        />
+                      </svg>
+                      <span data-langNum="LA_Info_buy_invitation">&nbsp; 초대장 구매하기</span>
+                    </button>
+                  </div>
+
+                  <div class="Information-content3 flex_align_center zoomin">
+                    <img src="../img/launchapp-info-cardtoken.gif" alt="" />
+                    <div class="Information-content3-text" data-langNum="LA_Info_buy_Info_1">
+                      리도 NFT 카드 1개당<br />
+                      약 34개의 리도 토큰 매일 보상<br />
+                    </div>
+                  </div>
+
+                  <div class="Information-content4 zoomin" data-langNum="LA_Info_buy_Info_2">
+                    제출하신 카드는 스마트 컨트랙트에 의해 안전하게 보관되며<br />
+                    제출하신 카드는 체크 아웃 시 반환받을 수 있습니다.<br />
+                    체크인 시 아래의 주의사항을 확인 후 체크인 하세요<br />
+                  </div>
+
+                  <div class="Information-content5 zoomin">
+                    <ul class="Information-content5-text">
+                      <li data-langNum="LA_Info_buy_Info_caution_1">
+                        카드를 보관하는데 이더리움의 스마트 컨트랙트를 사용하기 때문에 안전하게 보관되지만 체크인 시 부담해야 하는 수수료가 존재합니다.<br />
+                        수수료인 가스값이 갑자기 높아지는 시기도 있으니 가스값을 체크한 후 체크인을 진행하세요.
+                      </li>
+                      <li data-langNum="LA_Info_buy_Info_caution_2">체크인은 한 번에 20개의 카드까지만 가능하며 20개의 넘는 카드를 체크인할 시 여러 번에 걸쳐서 체크인을 진행해야 합니다.</li>
+                      <li data-langNum="LA_Info_buy_Info_caution_3">
+                        처음 체크인을 진행할 시 사용자의 동의를 받아야 합니다. 따라서 체크인 버튼 전에 ‘Approve’ 버튼이 보이게 되며 ‘Approve’를 진행한 후 체크인이 가능합니다
+                      </li>
+                      <li data-langNum="LA_Info_buy_Info_caution_4">
+                        카드당 한 번의 보너스 이벤트가 주어지며 보너스 이벤트는 체크인 후 약 31일에 보상받을 수 있지만 31일 안에 또 다른 카드의 체크인을 할 경우 다시 31일을 기다려야 합니다.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div id="dashboard" class="tab">
+                  <!-- One-time Bonus Claim Start -->
+                  <div class="modal-onetimebonus">
+                    <div class="modal_body">
+                      <div>
+                        <button class="btn-close-popup" style="position: absolute; right: 20px; min-width: 38px; padding-left: 2px; padding-right: 2px; font-size: 12px">X</button>
+                      </div>
+                      <div class="frame-common" style="margin-top: 0">
+                        <div style="width: 100%">
+                          <p style="margin-bottom: 10px" data-langNum="LA_Dash_bonus_claim_title">이벤트 보너스 지급 받기</p>
+                          <div style="margin-bottom: 10px">
+                            <b><span style="margin-bottom: 0px" id="bonus_claim_complete"></span></b>
+                          </div>
+
+                          <p data-langNum="LA_Dash_bonus_claim_info">체크인 한 카드에 지급되는 이벤트 보너스는 카드당 1회만 지급받을 수 있습니다.</p>
+                          <div id="bonus-deck-selected-cnt" style="text-align: center"></div>
+                          <div class="bonus-deck-outside">
+                            <div id="bonus_deck" class="deck"></div>
+                          </div>
+                          <div id="bonus-btn-div" class="bonus-btn-div" style="text-align: center">
+                            <button style="margin-top: 20px" id="bonus-claim-btn" disabled onclick="runBonusClaim()" data-langNum="LA_Dash_LEEDO_claim">Claim</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- One-time Bonus Claim End -->
+
+                  <div class="Dashboard-content1 flex_jycenter margin-b-50">
+                    <div class="Dashboard-content1-grid" id="grid_container">
+                      <div class="Dashboard-content1-item1 flex_align_center zoomin">
+                        <p class="Dashboard-content1-item1-div1" data-langNum="LA_Dash_1">LEEDO NFT<br />체크인 현황</p>
+
+                        <div class="Dashboard-content1-item1-div2 margin-b-20">
+                          <div class="circle_progress_wrap" id="circle_progress">
+                            <svg class="circle_progress" viewBox="0 0 220 220">
+                              <circle class="frame" cx="110" cy="110" r="95" stroke-width="16" />
+                              <circle class="bar" cx="110" cy="110" r="95" stroke-width="16" />
+                            </svg>
+                            <strong class="value">0%</strong>
+                          </div>
+                        </div>
+
+                        <div class="Dashboard-content1-item1-div3">
+                          <span class="Dashboard-content1-item1-div3-num" id="stakednum">0</span>
+                          <span class="Dashboard-content1-item1-div3-slash">/</span>
+                          <span class="Dashboard-content1-item1-div3-total" id="total_supply">0</span>
+                        </div>
+                      </div>
+                      <div class="Dashboard-content1-item2 flex_center zoomin">
+                        <p class="Dashboard-content1-items-text" data-langNum="LA_Dash_2">LEEDO NFT<br />컨트랙트 주소</p>
+                        <div id="leedo-address" class="caption2"></div>
+                      </div>
+                      <div class="Dashboard-content1-item3 flex_center zoomin">
+                        <p class="Dashboard-content1-items-text" data-langNum="LA_Dash_3">LEEDO NFT<br />스테이킹 컨트랙트 주소</p>
+                        <div id="leedo-staking-address" class="caption2"></div>
+                      </div>
+                      <div class="Dashboard-content1-item4 flex_center zoomin">
+                        <p class="Dashboard-content1-items-text" data-langNum="LA_Dash_4">LEEDO ERC-20 TOKEN<br />컨트랙트 주소</p>
+                        <div id="leedo-erc20-address" class="caption2"></div>
+                        <button class="Dashboard-content1-item4-btn small" id="add-token-btn" disabled type="button" name=" button" onclick="RequestAddToken()" data-langNum="LA_Dash_4_button">
+                          지갑에 LEEDO 추가
+                        </button>
+                      </div>
+
+                      <div class="Dashboard-content1-item5 flex_center zoomin">
+                        <p class="Dashboard-content1-items-text" data-langNum="LA_Dash_5">보유중인 카드</p>
+                        <div class="Dashboard-content1-items-num" id="my_unstaked_cards">0</div>
+                        <div class="Dashboard-content1-items-card-text" data-langNum="LA_Dash_cards">cards</div>
+                      </div>
+                      <div class="Dashboard-content1-item6 flex_center zoomin">
+                        <p class="Dashboard-content1-items-text" data-langNum="LA_Dash_6">체크인한 카드</p>
+                        <div class="Dashboard-content1-items-num" id="my_staked_cards">0</div>
+                        <div class="Dashboard-content1-items-card-text" data-langNum="LA_Dash_cards">cards</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="Dashboard-content2">
+                    <p class="subtitle margin-b-20" data-langNum="LA_Dash_LEEDO_Title">LEEDO</p>
+                    <div class="flex_jycenter">
+                      <div class="Dashboard-content2-grid" id="reward-grid">
+                        <div class="Dashboard-content2-item1 textlft flex_align_center zoomin">
+                          <div>
+                            <p data-langNum="LA_Dash_LEEDO_CA_reward">지급 받을 수 있는 리워드</p>
+                            <span class="reward-value" id="reward_balance">0</span>
+                          </div>
+                          <button class="Dashboard-content2-item1-claim-btn" type="button" id="claim-btn" disabled onclick="runRewardsClaim()" data-langNum="LA_Dash_LEEDO_claim">Claim</button>
+                        </div>
+
+                        <div class="Dashboard-content2-item2 textlft flex_align_center zoomin">
+                          <div class="margin-b-20">
+                            <p data-langNum="LA_Dash_LEEDO_P_reward">지급 받은 리워드</p>
+                            <span class="reward-value" id="my_balance">0</span>
+                          </div>
+
+                          <div>
+                            <p data-langNum="LA_Dash_LEEDO_My_balance">나의 LEEDO 밸런스</p>
+                            <span class="reward-value" id="claimed_rewards">0</span>
+                          </div>
+                        </div>
+
+                        <div class="Dashboard-content2-item3 flex_align_center zoomin" id="one_time_bonus_div">
+                          <div class="reward_body">
+                            <p data-langNum="LA_Dash_bonus">보너스 이벤트</p>
+                            <span id="claimable_block"></span>
+                          </div>
+                          <button id="btn-open-popup" disabled class="btn-open-popup" type="button" name=" button" style="align-self: center">One-Time Bonus Claim</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="staking" class="tab">
+                  <div class="Staking">
+                    <div class="Staking-top">
+                      <input style="display: none" id="check1" type="radio" name="staking-tabs" onclick="listTabData()" checked />
+                      <div class="Staking-top-checked">
+                        <label for="check1" class="label-cursor">
+                          <span data-langNum="LA_St_menu1">Available for staking</span>
+                          <sapn id="card_cnt"></sapn>
+                        </label>
+                      </div>
+                      <input style="display: none" id="check2" type="radio" name="staking-tabs" onclick="listTabData()" />
+                      <div class="Staking-top-checked">
+                        <label for="check2" class="label-cursor">
+                          <span data-langNum="LA_St_menu2">Staked</span>
+                          <sapn id="staked_card_cnt"></sapn>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="Staking-mid">
+                      <div class="Staking-mid-content1" id="deck-title">Check-in now</div>
+                      <div class="Staking-mid-content2" id="deck-selected-cnt">( 0 / 20 ) Maximum 20 cards per transaction.</div>
+
+                      <div class="Staking-mid-cardlist">
+                        <div class="deck-outside">
+                          <div id="deck" class="deck"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="Staking-bottom" id="stake-btn-div"></div>
+                  </div>
+                </div>
+
+                <div id="utility" class="tab">
+                  <div class="Utility">
+                    <p class="zoomin" data-langNum="LA_Ut_info">
+                      LEEDO 프로젝트의 커뮤니티에서 만들어진 다양한 유틸리티 공간입니다.<br />
+                      LEEDO 프로젝트에 필요한 유틸리티를 이곳에 추가하고 싶으시거나 유틸리티에 대한 아이디어가 있다면 디스코드로 오셔서 요청해주세요.
+                    </p>
+                    <div class="Utility-content1 zoomin">
+                      <div class="Utility-content1-contain">
+                        <div class="Utility-content1-text">
+                          <p class="Utility-content1-text1" data-langNum="LA_Ut_LEEDO_scan">LEEDO NFT 카드 보너스 이벤트 지급 여부 확인</p>
+                          <span class="Utility-content1-text2 caption" data-langNum="LA_Ut_LEEDO_scan_info">
+                            LEEDO NFT 카드 번호(ID)를 입력해서 보너스 이벤트가 지급 되었는지 확인할 수 있습니다.
+                          </span>
+                        </div>
+                        <div>
+                          <button class="Utility-content1-btn" type="button" name=" button" onclick="goLeedoScan()" data-langNum="LA_Ut_button">이동</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      $(function () {
+        $("#tabs").tabs({ active: 0 });
+      });
+    </script>
+    <script src="../js/1.2.11-web3-min.js"></script>
+    <script src="../js/5.2-umd-min.js" type="application/javascript"></script>
+    <script src="../contractabi/leedo_nft_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedo_valut_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedo_erc20_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedo_util_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedorian_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/leedorian_erc20_contract.js" type=" text/javascript"></script>
+    <script src="../contractabi/contract_func.js" type=" text/javascript"></script>
+    <script src="../js/utils.js" type=" text/javascript"></script>
+    <script src="../js/dapp_util.js" type=" text/javascript"></script>
+    <script src="../locales/lang_ko.js" type="text/javascript"></script>
+    <script src="../locales/lang_en.js" type="text/javascript"></script>
+    <script src="../locales/locales.js" type="text/javascript"></script>
+    <script src="../js/launchapp.js" type=" text/javascript"></script>
+  </body>
+</html>
