@@ -184,4 +184,7 @@ lang_ko = {
   LW_Dash_4_info1: "도착한 카드가 없습니다.",
   LW_Dash_4_info2: " cards have arrived.",
   LW_Dash_4_info3: "카드리스트",
+
+  LW_Util_morph_title: "LEEDO NFT 카드 모핑 툴",
+  LW_Util_morph_info: "LEEDO 카드 번호(ID)를 입력하고 폰트와 배경을 변경해 새로운 카드를 만들어 보세요",
 };

@@ -179,4 +179,7 @@ lang_en = {
   LW_Dash_4_info1: "There are no cards arrived.",
   LW_Dash_4_info2: " cards have arrived.",
   LW_Dash_4_info3: "Card Lists",
+
+  LW_Util_morph_title: "LEEDO NFT Card Morphing Tool",
+  LW_Util_morph_info: "Enter your LEEDO NFT card number (ID) and change the font and background to create a new card",
 };
