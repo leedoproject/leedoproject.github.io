@@ -40,7 +40,7 @@ function gotoDiscord() {
 }
 
 function goOpenSea() {
-  var popup = window.open("https://opensea.io/collection/squid-game-card-nft", "opensea");
+  var popup = window.open("https://opensea.io/collection/leedoproject", "opensea");
 }
 
 function goLeedoScan() {
