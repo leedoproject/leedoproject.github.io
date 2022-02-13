@@ -19,11 +19,11 @@ lang_en = {
   About_Title: "About",
   Home_About:
     "The LEEDO project has distributed LEEDO NFT and tokens to the community <br />" +
-    "and aims to build a decentralized project. <br />" +
+    "and aims to build a decentralized project. <br><br>" +
     "All decisions of the LEEDO project are made by the community and the DAO, <br />" +
     "and the LEEDO project aims to provide a suitable technical environment and funds <br />" +
     "for the development team that provides games, game DeFi, communities, marketplace, etc., <br />" +
-    "which are the core components of the blockchain game ecosystem. <br />" +
+    "which are the core components of the blockchain game ecosystem. <br><br>" +
     "Based on the community, new projects or development teams are discovered <br />" +
     "and financed to create a decentralized game ecosystem.",
 
