@@ -459,12 +459,16 @@ async function runRewardsClaim() {
   const target = document.getElementById("claim-btn");
   target.disabled = true;
 
-  let claimResult = await rewardsClaim(myAddr);
-  if (claimResult) {
-    fetchRewardsInfo();
-    checkOnetimeBonusClaimAvailable();
+  try {
+    let claimResult = await rewardsClaim(myAddr);
+    if (claimResult) {
+      fetchRewardsInfo();
+      checkOnetimeBonusClaimAvailable();
+    } else {
+      target.disabled = false;
+    }
     $("#stake-loading").hide();
-  } else {
+  } catch (error) {
     target.disabled = false;
     $("#stake-loading").hide();
   }
@@ -508,19 +512,25 @@ async function cardCheckIn() {
   target.disabled = true;
   let checkin_result;
   $("#stake-loading").show();
-  checkin_result = await checkIn(myAddr, checkInTokenIdList);
-  if (checkin_result) {
-    // update card count / card list
-    unstaked_cards = Number(unstaked_cards) - checkInTokenIdList.length;
-    staked_cards = Number(staked_cards) + checkInTokenIdList.length;
-    checkInTokenIdList = [];
-    stakedCardIds = [];
-    unstakedcardIds = [];
-    await fetchStakingInfo();
-    await fetchRewardsInfo();
-    await checkOnetimeBonusClaimAvailable();
-    getStakedCards(stakeKind);
-  } else {
+  try {
+    checkin_result = await checkIn(myAddr, checkInTokenIdList);
+    if (checkin_result) {
+      // update card count / card list
+      unstaked_cards = Number(unstaked_cards) - checkInTokenIdList.length;
+      staked_cards = Number(staked_cards) + checkInTokenIdList.length;
+      checkInTokenIdList = [];
+      stakedCardIds = [];
+      unstakedcardIds = [];
+      await fetchStakingInfo();
+      await fetchRewardsInfo();
+      await checkOnetimeBonusClaimAvailable();
+      getStakedCards(stakeKind);
+    } else {
+      target.disabled = false;
+      $("#stake-loading").hide();
+    }
+  } catch (error) {
+    console.log(error);
     target.disabled = false;
     $("#stake-loading").hide();
   }
@@ -533,19 +543,25 @@ async function cardCheckOut() {
   target.disabled = true;
   let checkout_result;
   $("#stake-loading").show();
-  checkout_result = await checkOut(myAddr, checkInTokenIdList);
-  if (checkout_result) {
-    // update card count / card list
-    unstaked_cards = Number(unstaked_cards) - checkInTokenIdList.length;
-    staked_cards = Number(staked_cards) + checkInTokenIdList.length;
-    checkInTokenIdList = [];
-    stakedCardIds = [];
-    unstakedcardIds = [];
-    await fetchStakingInfo();
-    await fetchRewardsInfo();
-    await checkOnetimeBonusClaimAvailable();
-    getStakedCards(stakeKind);
-  } else {
+  try {
+    checkout_result = await checkOut(myAddr, checkInTokenIdList);
+    if (checkout_result) {
+      // update card count / card list
+      unstaked_cards = Number(unstaked_cards) - checkInTokenIdList.length;
+      staked_cards = Number(staked_cards) + checkInTokenIdList.length;
+      checkInTokenIdList = [];
+      stakedCardIds = [];
+      unstakedcardIds = [];
+      await fetchStakingInfo();
+      await fetchRewardsInfo();
+      await checkOnetimeBonusClaimAvailable();
+      getStakedCards(stakeKind);
+    } else {
+      target.disabled = false;
+      $("#stake-loading").hide();
+    }
+  } catch (error) {
+    console.log(error);
     target.disabled = false;
     $("#stake-loading").hide();
   }
@@ -559,17 +575,24 @@ async function runBonusClaim() {
   bonus_claim_complete.innerHTML = "";
   target.disabled = true;
   let claim_result = false;
-  claim_result = await bonusClaim(myAddr, claimTokenIdList);
-  if (claim_result) {
-    // update unclaim card list
-    bonus_claim_complete.innerHTML = "Bonus claim for " + claimTokenIdList.length + " card(s) has been completed.";
-    // setTimeout(() => {
-    //   target.innerHTML = "";
-    // }, 3000);
-    claimTokenIdList = [];
-    showBonusClaimCardList();
-    checkOnetimeBonusClaimAvailable();
-  } else {
+  try {
+    claim_result = await bonusClaim(myAddr, claimTokenIdList);
+    if (claim_result) {
+      // update unclaim card list
+      bonus_claim_complete.innerHTML = "Bonus claim for " + claimTokenIdList.length + " card(s) has been completed.";
+      // setTimeout(() => {
+      //   target.innerHTML = "";
+      // }, 3000);
+      claimTokenIdList = [];
+      await fetchRewardsInfo();
+      showBonusClaimCardList();
+      checkOnetimeBonusClaimAvailable();
+    } else {
+      target.disabled = false;
+      $("#stake-loading").hide();
+    }
+  } catch (error) {
+    console.log(error);
     target.disabled = false;
     $("#stake-loading").hide();
   }
