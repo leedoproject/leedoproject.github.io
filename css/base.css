@@ -1,11 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&display=swap");
+
 @font-face {
-  font-family: "SangSangAnt";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/SangSangAnt.woff")
-    format("woff");
+  font-family: "Dolbomche_R";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/Dolbomche_R.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
-@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@font-face {
+  font-family: "Manrope", sans-serif;
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+@font-face {
+  font-family: "CookieRunOTF-Black";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Black00.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --purple-color: #5a2c99;
@@ -24,17 +34,16 @@
   --bk-font-color: #333333;
   --secondary-font-color: #a18f95;
   --white: #ffffff;
-  --font-size-heading: 8rem;
-  --font-size-heading-m: 6.6rem;
-  --font-size-40: 4rem;
-  --font-size-content: 3.2rem;
-  --font-size-30: 3rem;
-  --font-size-28: 2.8rem;
-  --font-size-content-m: 2.4rem;
+  --font-size-heading: 6rem;
+  --font-size-heading-m: 4rem;
+  --font-size-content: 2rem;
+  --font-size-content-m: 1.8rem;
+  --font-size-36: 3.6rem;
   --font-size-26: 2.6rem;
   --font-size-24: 2.4rem;
-  --font-size-22: 2.2rem;
   --font-size-20: 2rem;
+  --font-size-22: 2.2rem;
+  --font-size-18: 1.8rem;
   --font-size-16: 1.6rem;
   --font-size-14: 1.4rem;
   --font-size-12: 1.2rem;
@@ -53,11 +62,11 @@ body {
 }
 html {
   color: var(--Primay);
-  font-family: "SangSangAnt";
+  font-family: "Manrope", "Dolbomche_R", sans-serif;
+  font-weight: 400;
   font-size: 10px;
   color: #fff;
-  font-weight: normal;
-  line-height: 1;
+  line-height: 1.4;
   text-align: center;
 }
 body {
@@ -70,15 +79,17 @@ a {
   color: var(--white);
 }
 button {
-  padding: 0.14em 0.84em;
+  padding: 0.4em 0.84em;
   border-radius: 8px;
   border: 0;
   cursor: pointer;
   background: var(--purple-color);
-  font-family: "SangSangAnt";
-  font-size: var(--font-size-30);
+  font-family: "Manrope", "Dolbomche_R", sans-serif;
+  font-size: var(--font-size-16);
   color: var(--white);
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
 }
 button:active,
 button:hover {
@@ -90,8 +101,15 @@ a,
 label {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+button:disabled,
+button[disabled] {
+  background-color: var(--disabled-purple-color);
+  color: var(--dark-purple-color);
+  box-shadow: none;
+}
+
 button.small {
-  font-size: var(--font-size-24);
+  font-size: var(--font-size-14);
 }
 input:focus {
   outline: none;
@@ -108,14 +126,18 @@ header {
 img {
   width: 100%;
 }
-.notosanskr {
-  font-family: "Noto Sans KR", sans-serif;
+h1 {
+  font-size: var(--font-size-heading);
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: var(--font-size-26);
+  font-weight: 400;
 }
 .caption {
   display: flex;
   align-items: center;
   padding-top: 5px;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: var(--font-size-14);
   color: var(--gray-color);
 }
@@ -125,8 +147,8 @@ img {
   padding-right: 4px;
   fill: var(--gray-color);
 }
-.caption2, .caption2 a {
-  font-family: "Noto Sans KR", sans-serif;
+.caption2,
+.caption2 a {
   font-size: var(--font-size-14);
   color: var(--gray-color);
 }
@@ -140,14 +162,19 @@ a.caption:hover svg,
   fill: var(--white);
 }
 .number {
-  font-family: "Noto Sans KR", sans-serif;
   font-size: var(--font-size-36);
   font-weight: 600;
 }
-.zoomin{animation: zoomin 0.3s;}
+.zoomin {
+  animation: zoomin 0.3s;
+}
 @keyframes zoomin {
-  0% { transform: scale(0, 0); }
-  100% {transform: scale(1, 1); }
+  0% {
+    transform: scale(0, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
 
 .wrap {
@@ -163,18 +190,10 @@ section {
   max-width: 900px;
   margin: 0 auto;
   z-index: 10;
-  padding: 4.7em 0;
+  padding: 6em 0;
   position: relative;
 }
-h1 {
-  font-size: var(--font-size-heading);
-  margin-bottom: 30px;
-  font-weight: 600;
-}
-h2 {
-  font-size: var(--font-size-40);
-  font-weight: 400;
-}
+
 .hide {
   display: none;
 }
@@ -193,13 +212,75 @@ header {
   z-index: 110;
 }
 
-header > a#logo {
+header a#logo {
   float: left;
-  height: 34px;
-  padding: 3px 0;
 }
-header > a#logo > img {
+header a#logo > img {
+  width: 110px;
   height: 100%;
+}
+svg.logosvg {
+  width: 150px;
+  height: 32px;
+}
+svg.logosvg text {
+  font-family: "CookieRunOTF-Black";
+  font-size: 38px;
+  fill: transparent;
+  stroke-dasharray: 200px;
+  animation: stroke4 10s infinite;
+  animation-fill-mode: forwards;
+}
+svg.logosvg text:nth-child(1) {
+  animation-delay: 0s;
+}
+svg.logosvg text:nth-child(2) {
+  animation-delay: 0.5s;
+}
+svg.logosvg text:nth-child(3) {
+  animation-delay: 1s;
+}
+svg.logosvg text:nth-child(4) {
+  animation-delay: 1.5s;
+}
+svg.logosvg text:nth-child(5) {
+  animation-delay: 2s;
+}
+
+@keyframes stroke4 {
+  0% {
+    stroke: var(--purple-color);
+    stroke-width: 2px;
+    stroke-dashoffset: 200px;
+    fill: transparent;
+  }
+  29% {
+    fill: transparent;
+  }
+  30% {
+    stroke: var(--purple-color);
+    stroke-width: 2px;
+    fill: #fff;
+    stroke-dashoffset: 0px;
+  }
+  50% {
+    fill: #fff;
+    stroke: var(--purple-color);
+    stroke-width: 2px;
+  }
+  52% {
+    fill: transparent;
+  }
+  58% {
+    stroke: var(--purple-color);
+    stroke-width: 2px;
+  }
+  100% {
+    stroke: var(--purple-color);
+    stroke-width: 2px;
+    stroke-dashoffset: 200px;
+    fill: transparent;
+  }
 }
 
 input[id="hamburger-menu"],
@@ -222,7 +303,8 @@ header .gnb > ol > li > a {
   padding: 0 0.84em;
   border-radius: 8px;
   border: 1px solid var(--purple-color);
-  font-size: var(--font-size-28);
+  font-size: var(--font-size-16);
+  font-weight: 600;
   line-height: 40px;
   color: var(--purple-color);
   transition: all 0.3s;
@@ -244,7 +326,6 @@ header .gnb > ol > li > a:hover {
   background-position: 90% center;
   background-size: 12px;
   cursor: pointer;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: var(--font-size-12);
 }
 #lang > div {
@@ -343,6 +424,10 @@ aside input[id="icon-btn"] {
     animation: none;
   }
   header > a#logo {
+    height: 26px;
+  }
+  svg.logosvg {
+    width: 120px;
     height: 26px;
   }
   header .gnb {

@@ -1,29 +1,38 @@
-<a href="../index.html" id="logo">
-  <img class="header-logo" src="../img/logo.png" alt="logo" />
+<div>
+  <a href="../index.html" id="logo">
+    <svg class="logosvg" viewBox="0 0 150 32">
+      <text x="0" y="92%">L</text>
+      <text x="22" y="92%">E</text>
+      <text x="44" y="92%">E</text>
+      <text x="66" y="92%">D</text>
+      <text x="91" y="92%">O</text>
+    </svg>
+    <!--<img class="header-logo" src="../img/logo.png" alt="logo" />-->
+  </a>
 
-</a>
+  <input type="checkbox" id="hamburger-menu" />
+  <label for="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+  <div class="gnb" id="gnb">
+    <div id="lang" data-role="selectBox">
+    <div date-value="optValue" class="selected-option" ></div>
+        <ul class="hide">
+          <li onclick='selectLang("ko")'><i><img src="../img/icon-lang-ko.svg" alt=""/></i><span>KO</span></li>
+          <li onclick='selectLang("en")'><i><img src="../img/icon-lang-en.svg" alt=""/></i><span>EN</span</li>
+        </ul>
+    </div>
 
-<input type="checkbox" id="hamburger-menu" />
-<label for="hamburger-menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</label>
-<div class="gnb" id="gnb">
-  <div id="lang" data-role="selectBox">
-  <div date-value="optValue" class="selected-option" ></div>
-      <ul class="hide">
-        <li onclick='selectLang("ko")'><i><img src="../img/icon-lang-ko.svg" alt=""/></i><span>KO</span></li>
-        <li onclick='selectLang("en")'><i><img src="../img/icon-lang-en.svg" alt=""/></i><span>EN</span</li>
-      </ul>
+    <ol>
+      <li class="header_target_home" style="display: none;" ><a href="../index.html">Home</a></li>
+      <li class="header_target_launchapp" style="display: none;"><a href="../page/launchapp.html">Launch App</a></li>
+      <li class="header_target_leedoworld" style="display: none;"><a href="../page/leedoworld.html">Leedo World</a></li>
+    </ol>
   </div>
-
-  <ol>
-    <li class="header_target_home" style="display: none;" ><a href="../index.html">Home</a></li>
-    <li class="header_target_launchapp" style="display: none;"><a href="../page/launchapp.html">Launch App</a></li>
-    <li class="header_target_leedoworld" style="display: none;"><a href="../page/leedoworld.html">Leedo World</a></li>
-  </ol>
 </div>
+
 
 <script type="text/javascript">
   const body = document.querySelector("body");

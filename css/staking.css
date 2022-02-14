@@ -1,4 +1,3 @@
-
 /* snb */
 nav {
   position: fixed;
@@ -506,7 +505,7 @@ progress.staking-progress {
   border-radius: 20px;
 }
 
-.Dashboard-content1-items-gray{
+.Dashboard-content1-items-gray {
   color: #767676;
   font-family: Noto Sans KR;
   font-style: normal;

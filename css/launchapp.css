@@ -63,6 +63,7 @@ button:disabled,
 button[disabled] {
   background-color: var(--disabled-green-color);
   color: var(--dark-green-color);
+  box-shadow: none;
 }
 .wrap {
   display: flex;
@@ -73,6 +74,41 @@ header {
   position: relative;
   left: 0;
   top: 0;
+}
+@keyframes stroke4 {
+  0% {
+    stroke: var(--green-color);
+    stroke-width: 2px;
+    stroke-dashoffset: 200px;
+    fill: transparent;
+  }
+  29% {
+    fill: transparent;
+  }
+  30% {
+    stroke: var(--green-color);
+    stroke-width: 2px;
+    fill: #fff;
+    stroke-dashoffset: 0px;
+  }
+  50% {
+    fill: #fff;
+    stroke: var(--green-color);
+    stroke-width: 2px;
+  }
+  52% {
+    fill: transparent;
+  }
+  58% {
+    stroke: var(--green-color);
+    stroke-width: 2px;
+  }
+  100% {
+    stroke: var(--green-color);
+    stroke-width: 2px;
+    stroke-dashoffset: 200px;
+    fill: transparent;
+  }
 }
 
 header .gnb > ol > li > a {
@@ -112,9 +148,7 @@ nav ul li a {
   display: flex;
   align-items: center;
   height: 64px;
-  line-height: 64px;
   padding-left: 30px;
-  font-family: "Noto Sans KR", sans-serif;
   font-size: var(--font-size-14);
   text-align: left;
 }
@@ -142,12 +176,19 @@ nav ul li a svg {
   padding: 15px 60px;
   text-align: right;
 }
-.my-address {
+.address-network p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
+.address-network p svg {
+  margin-right: 4px;
+}
+
 .address-myaddress {
   float: right;
   color: var(--green-color);
-  font-size: var(--font-size-30);
+  font-size: var(--font-size-16);
 }
 .address-myaddress > div {
   display: flex;
@@ -157,6 +198,9 @@ nav ul li a svg {
 }
 .address-myaddress-div {
   margin-left: 20px;
+}
+.address button {
+  float: right;
 }
 
 .tab-wrap {
@@ -174,18 +218,9 @@ nav ul li a svg {
   top: 0;
   height: 100%;
   width: 100%;
-  padding: 15px 60px;
 }
-.content-zoomin {
-  animation: zoomin 0.3s;
-}
-@keyframes zoomin {
-  0% {
-    transform: scale(0, 0);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
+.tab > div {
+  padding: 15px 60px 25px 60px;
 }
 
 .Information-content1-text2 {
@@ -193,7 +228,7 @@ nav ul li a svg {
 }
 
 .Information-content2-btn {
-  margin-top: 20px;
+  margin: 20px auto 0;
 }
 .Information-content3 {
   width: 377px;
@@ -216,10 +251,7 @@ nav ul li a svg {
   margin-top: 20px;
 }
 .Information-content5 {
-  font-family: "Noto Sans KR";
   margin-top: 10px;
-  font-size: 12px;
-  color: #767676;
   display: flex;
   justify-content: center;
 }
@@ -229,7 +261,8 @@ nav ul li a svg {
 }
 .Information-content5-text > li {
   margin-top: 8px;
-  line-height: 1.4;
+  font-size: var(--font-size-16);
+  color: var(--gray-color);
   list-style-type: disc;
 }
 
@@ -278,27 +311,22 @@ nav ul li a svg {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-family: Noto Sans KR;
-  font-size: 30px;
+  font-size: var(--font-size-24);
 }
 .Dashboard-content1-item1-div3 {
-  font-family: Noto Sans KR;
-  font-size: 16px;
+  font-size: var(--font-size-16);
 }
 
 .Dashboard-content1-item2-div2-address {
-  color: #767676;
-  font-family: Noto Sans KR;
+  color: var(--gray-color);
   font-style: normal;
   font-weight: 350;
-  font-size: 16px;
+  font-size: var(--font-size-16);
 }
 .Dashboard-content1-items-num {
   color: var(--green-color);
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
+  font-size: var(--font-size-36);
+  font-weight: 600;
   margin-top: 20px;
 }
 
@@ -312,9 +340,8 @@ nav ul li a svg {
   transform: rotate(-90deg);
 }
 .Dashboard-content1-items-card-text {
-  color: #767676;
+  color: var(--gray-color);
   font-size: 16px;
-  font-family: Noto Sans KR;
   font-style: normal;
 }
 .Dashboard-content2-item1 {
@@ -326,11 +353,9 @@ nav ul li a svg {
   justify-content: center;
 }
 .reward-value {
-  font-size: 24px;
-  font-family: Noto Sans KR;
-  font-style: normal;
   color: var(--green-color);
-  font-weight: bold;
+  font-size: var(--font-size-24);
+  font-weight: 600;
 }
 .block {
   display: none;
@@ -342,12 +367,10 @@ nav ul li a svg {
 }
 
 .ontime-bonus-content {
-  font-family: Noto Sans KR;
   margin-top: 10px;
   margin-bottom: 10px;
-  line-height: 20px;
-  font-size: 14px;
-  color: #818181;
+  font-size: var(--font-size-14);
+  color: var(--gray-color);
 }
 
 .Staking {
@@ -370,7 +393,7 @@ nav ul li a svg {
   cursor: pointer;
   display: block;
   width: 100%;
-  font-size: 32px;
+  font-size: var(--font-size-content);
   padding: 15px 20px;
   box-sizing: border-box;
   display: flex;
@@ -382,23 +405,17 @@ nav ul li a svg {
 }
 .Staking-mid {
   padding: 20px;
+  text-align: center;
 }
 .Staking-mid-content1 {
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 22px;
-  text-align: center;
-  color: #fff;
+  font-weight: 600;
+  font-size: var(--font-size-18);
+  color: var(--white);
 }
 .Staking-mid-content2 {
-  font-family: Noto Sans KR;
-  font-style: normal;
-  font-weight: 350;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  color: #767676;
+  font-weight: 300;
+  font-size: var(--font-size-14);
+  color: var(--gray-color);
   margin-bottom: 20px;
 }
 .Staking-mid-cardlist {
@@ -465,6 +482,9 @@ nav ul li a svg {
 .Staking-bottom {
   padding-bottom: 20px;
 }
+.Staking-bottom button {
+  margin: 0 auto;
+}
 
 .Utility {
   width: 100%;
@@ -500,6 +520,7 @@ nav ul li a svg {
   clear: both;
   float: left;
   text-align: left;
+  font-size: var(--font-size-14);
 }
 .Utility-content1-btn {
   float: right;
@@ -585,16 +606,12 @@ nav ul li a svg {
 
 .claimable_block_info {
   color: var(--green-color);
-  font-size: 16px;
-  font-family: Noto Sans KR;
-  font-style: normal;
+  font-size: var(--font-size-16);
   text-decoration: underline;
 }
 #claimable_block {
   color: white;
-  font-size: 16px;
-  font-family: Noto Sans KR;
-  font-style: normal;
+  font-size: var(--font-size-16);
 }
 @media screen and (min-width: 901px) {
   .Dashboard-content1-grid {
@@ -650,7 +667,7 @@ nav ul li a svg {
     column-gap: 20px;
   }
   .Dashboard-content2-grid > div p {
-    font-size: var(--font-size-30);
+    font-size: var(--font-size-18);
     margin-bottom: 10px;
   }
   .Dashboard-content2-item1 {
@@ -684,7 +701,7 @@ nav ul li a svg {
     align-items: flex-start;
   }
   h2 {
-    font-size: var(--font-size-28);
+    font-size: var(--font-size-16);
   }
   header input[id="hamburger-menu"] + label span {
     background: var(--green-color);
@@ -713,12 +730,19 @@ nav ul li a svg {
   nav ul li a svg {
     padding: 0;
   }
-
+  .tab-container {
+    overflow: auto;
+  }
   .address {
     padding: 15px;
   }
+
   .tab {
-    padding: 20px 15px;
+    padding: 0;
+    overflow: inherit;
+  }
+  .tab > div {
+    padding: 50px 15px;
     overflow: auto;
   }
   .Information-content1-text2 {
@@ -727,6 +751,11 @@ nav ul li a svg {
   .Information-content1-text2 svg {
     margin-top: -4px;
   }
+  .Information-content5-text {
+    width: 90%;
+    margin: 10px auto 0;
+  }
+
   .Dashboard-content1 {
     margin-top: 0;
   }
@@ -757,7 +786,7 @@ nav ul li a svg {
     text-align: center;
   }
   .Utility-content1-text2 {
-    font-size: 12px;
+    font-size: var(font-size-12);
   }
   .Utility-content1-contain button {
     margin-top: 20px;
