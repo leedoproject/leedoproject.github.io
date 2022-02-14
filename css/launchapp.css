@@ -683,6 +683,18 @@ nav ul li a svg {
     grid-column-end: 4;
   }
 }
+
+@media screen and (max-height: 700px) {
+  .deck {
+    display: flex;
+    /* flex-flow: row-reverse wrap; */
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    height: 250px;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .deck-outside {
     /* display: flex; */
