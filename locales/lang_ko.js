@@ -16,7 +16,7 @@ lang_ko = {
   Home_welcome_1: "LEEDO 메타버스인 LEEDO World에 오신 것을 환영합니다!",
   Home_welcome_2: "LEEDO World는 블록체인 게임이 시작되는 땅이며 커뮤니티가 모여드는 공간입니다.",
 
-  About_Title: "About",
+  About_Title: "About LEEDO Project",
   Home_About:
     "LEEDO Project는 커뮤니티를 중심으로 NFT와 LEEDO Token을 " +
     "분배하였으며<br />" +

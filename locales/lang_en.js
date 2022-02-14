@@ -16,7 +16,7 @@ lang_en = {
   Home_welcome_1: "Welcome to LEEDO World!",
   Home_welcome_2: "LEEDO World is where the blockchain game begins and the community gathers.",
 
-  About_Title: "About",
+  About_Title: "About LEEDO Project",
   Home_About:
     "The LEEDO project has distributed LEEDO NFT and tokens to the community <br />" +
     "and aims to build a decentralized project. <br><br>" +
