@@ -22,13 +22,13 @@
 html,
 body {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   background: var(--dark-purple-color);
 }
 .wrap {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 header {
   position: relative;
@@ -70,10 +70,13 @@ nav ul li a:active,
 nav ul li a:focus {
   background: var(--purple-color);
   transition: all 0.6s;
+  border: 0;
 }
+
 .ui-state-active a,
 .ui-state-active a:link {
   background: var(--purple-color);
+  border: 0;
 }
 nav ul li a svg {
   width: 16px;
@@ -93,7 +96,7 @@ nav ul li a svg {
 /* 지갑연결 */
 .address {
   flex-shrink: 0;
-  padding: 15px 60px;
+  padding: 15px 30px;
   text-align: right;
 }
 .address-network {
@@ -124,6 +127,7 @@ nav ul li a svg {
 .address-myaddress-div {
   margin-left: 20px;
 }
+
 .address button {
   float: right;
 }
@@ -143,7 +147,7 @@ nav ul li a svg {
   width: 100%;
 }
 .tab > div {
-  padding: 15px 60px 25px 60px;
+  padding: 15px 30px 25px 30px;
 }
 .tab .subtitle {
   text-align: left;
@@ -199,21 +203,16 @@ nav ul li a svg {
   border-radius: 8px;
 }
 
-/* #dashboard > div > div:hover {
-  transform: scale(1.01, 1.01);
-  transition: all 0.5s;
-} */
-
-#dashboard > div > div.balance {
-  background: linear-gradient(98deg, #8b5dcb 13%, #50268a 92%);
+#dashboard div.balance {
+  background: linear-gradient(98deg, #8b5dcb 13%, #50268a 92%) !important;
 }
 
-#dashboard > div > div.balance span {
+#dashboard div.balance span {
   margin-top: 10px;
-  font-size: var(--font-size-18);
+  font-size: var(--font-size-16);
   color: rgba(255, 255, 255, 0.4);
 }
-#dashboard > div > div > .caption2 {
+#dashboard .caption2 {
   margin-top: 10px;
 }
 
@@ -355,7 +354,7 @@ nav ul li a svg {
     padding: 10px;
     font-size: var(--font-size-12);
   }
-  nav ul li a img {
+  nav ul li a svg {
     padding: 0;
   }
 
@@ -385,7 +384,7 @@ nav ul li a svg {
     padding: 20px;
   }
   .tab .subtitle {
-    font-size: var(--font-size-14);
+    font-size: var(--font-size-18);
   }
   .arrivedcards .number {
     display: block;

@@ -231,6 +231,7 @@ svg.logosvg text {
   stroke-dasharray: 200px;
   animation: stroke4 10s infinite;
   animation-fill-mode: forwards;
+  fill: #fff;
 }
 svg.logosvg text:nth-child(1) {
   animation-delay: 0s;
@@ -411,7 +412,7 @@ aside input[id="icon-btn"] {
   .content {
     width: 100%;
     min-width: 280px;
-    padding: 3em 15px;
+    padding: 4em 15px;
   }
   h2 {
     font-size: var(--font-size-content-m);
@@ -529,7 +530,7 @@ aside input[id="icon-btn"] {
     overflow: auto;
   }
   aside ul a {
-    width: 42px;
+    width: 40px;
     padding: 8px;
     opacity: 1;
   }

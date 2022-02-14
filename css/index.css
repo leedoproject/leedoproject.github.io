@@ -613,10 +613,6 @@ nav ol li a:hover::before {
     font-size: var(--font-size-18);
     color: rgba(255, 255, 255, 1);
   }
-  nav ol li a::before {
-    display: none;
-  }
-
   /* top banner */
   #top-banner img {
     height: 40px;
@@ -631,7 +627,7 @@ nav ol li a:hover::before {
   }
   #home .content {
     height: 100%;
-    padding: 0 15px;
+    padding: 150px 15px 0 15px;
   }
   #home .content img.title {
     width: 40%;
@@ -655,10 +651,10 @@ nav ol li a:hover::before {
   }
   @keyframes move1 {
     0% {
-      top: -80px;
+      top: -60px;
     }
     100% {
-      top: -90px;
+      top: -70px;
     }
   }
   @keyframes move2 {

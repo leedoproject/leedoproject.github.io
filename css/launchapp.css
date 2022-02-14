@@ -47,7 +47,7 @@
 html,
 body {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
   background-color: var(--dark-green-color);
 }
 button {
@@ -68,7 +68,7 @@ button[disabled] {
 .wrap {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 header {
   position: relative;
@@ -139,7 +139,7 @@ section {
   height: 100%;
 }
 nav {
-  width: 230px;
+  width: 210px;
   height: 100%;
   flex-shrink: 0;
   background: var(--dark-green-color);
@@ -151,6 +151,7 @@ nav ul li a {
   padding-left: 30px;
   font-size: var(--font-size-14);
   text-align: left;
+  border: 0;
 }
 nav ul li a:hover {
   background: var(--green-color);
@@ -173,7 +174,7 @@ nav ul li a svg {
 
 .address {
   flex-shrink: 0;
-  padding: 15px 60px;
+  padding: 15px 30px;
   text-align: right;
 }
 .address-network p {
@@ -220,7 +221,7 @@ nav ul li a svg {
   width: 100%;
 }
 .tab > div {
-  padding: 15px 60px 25px 60px;
+  padding: 15px 30px 25px 30px;
 }
 
 .Information-content1-text2 {
@@ -364,6 +365,7 @@ nav ul li a svg {
 .ui-state-active a,
 .ui-state-active a:link {
   background: var(--green-color);
+  border: 0;
 }
 
 .ontime-bonus-content {
@@ -612,6 +614,15 @@ nav ul li a svg {
 #claimable_block {
   color: white;
   font-size: var(--font-size-16);
+}
+@media (min-width: 901px) and (max-width: 1170px) {
+  nav {
+    width: 190px;
+  }
+  .circle_progress_wrap {
+    width: 140px;
+    height: 140px;
+  }
 }
 @media screen and (min-width: 901px) {
   .Dashboard-content1-grid {
