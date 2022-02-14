@@ -609,6 +609,10 @@ nav ol li a:hover::before {
     font-size: var(--font-size-14);
     text-align: center;
   }
+  nav ol li a:hover {
+    font-size: var(--font-size-18);
+    color: rgba(255, 255, 255, 1);
+  }
   nav ol li a::before {
     display: none;
   }
