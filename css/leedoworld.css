@@ -124,6 +124,9 @@ nav ul li a svg {
 .address-myaddress-div {
   margin-left: 20px;
 }
+.address button {
+  float: right;
+}
 
 /* 탭 */
 .tab-wrap {

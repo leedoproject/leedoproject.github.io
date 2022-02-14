@@ -124,7 +124,7 @@
 
             <div>
               <div class="address">
-                <div class="address-network block" id="address-network">
+                <div class="address-network" id="address-network">
                   <p>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -137,16 +137,16 @@
                 </div>
 
                 <span class="address-btn">
-                  <button class="Dashboard-content2-item1-claim-btn connect-btn" type="button" name=" button" onclick="connectWallet()" data-langNum="LA_Dash_connect">지갑 연결</button>
+                  <button class="connect-btn block" type="button" name=" button" onclick="connectWallet()" data-langNum="LA_Dash_connect">지갑 연결</button>
                 </span>
 
-                <div class="address-myaddress">
+                <div class="address-myaddress block">
                   <div class="address-myaddress-network">
                     <span class="address-myaddress-text">Network</span>
                     <span id="myaddress-network" class="myaddress-network caption"></span>
                   </div>
 
-                  <div class="address-myaddress-div">
+                  <div class="address-myaddress-div block">
                     <span class="address-myaddress-text">My address</span>
                     <span id="my-address" class="my-address caption"></span>
                   </div>
@@ -311,7 +311,7 @@
                               <p data-langNum="LA_Dash_LEEDO_CA_reward">지급 받을 수 있는 리워드</p>
                               <span class="reward-value" id="reward_balance">0</span>
                             </div>
-                            <button class="Dashboard-content2-item1-claim-btn" type="button" id="claim-btn" disabled onclick="runRewardsClaim()" data-langNum="LA_Dash_LEEDO_claim">Claim</button>
+                            <button type="button" id="claim-btn" disabled onclick="runRewardsClaim()" data-langNum="LA_Dash_LEEDO_claim">Claim</button>
                           </div>
 
                           <div class="Dashboard-content2-item2 textlft flex_align_center zoomin">
