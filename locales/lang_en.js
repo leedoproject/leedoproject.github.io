@@ -14,7 +14,7 @@ lang_en = {
 
   Home_Title: "LEEDO",
   Home_welcome_1: "Welcome to LEEDO World!",
-  Home_welcome_2: "<br><br>LEEDO World is where the blockchain game begins and the community gathers.To make new history, secure your spot in LEEDO world now.",
+  Home_welcome_2: "<br><br>LEEDO World is where the blockchain game begins and the community gathers.<br>To make new history, secure your spot in LEEDO world now.",
 
   About_Title: "About LEEDO Project",
   Home_About:
