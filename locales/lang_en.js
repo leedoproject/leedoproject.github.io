@@ -138,7 +138,7 @@ lang_en = {
 
   LA_myadd: "My address",
   LA_St_menu1: "Available for staking",
-  LA_St_menu2: "Stacked",
+  LA_St_menu2: "Staked",
   LA_St_info_1: "Check-in now",
   LA_St_info_2: "Maximum 20 cards per transaction",
   LA_St_info_3: "Card Lists",

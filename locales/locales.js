@@ -16,7 +16,7 @@ if (lang_value.length > 1) {
   }
 }
 
-// console.log("nav_lang =>", nav_lang);
+console.log("nav_lang =>", nav_lang);
 let lang = nav_lang;
 
 const lng_ko = lang_ko;
@@ -42,6 +42,7 @@ function selectLang(_lang) {
   // console.log("selectLang =>", _lang);
   lang = _lang;
   setLanguage(_lang);
+  setPagePath(_lang);
 }
 
 function getCurLang() {
