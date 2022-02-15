@@ -1,10 +1,22 @@
 $.lang = {};
+
 let nav_lang = undefined;
-if (navigator.language === "ko-KR" || navigator.language === "ko") {
-  nav_lang = "ko";
+
+let lang_value = location.href.split("?");
+if (lang_value.length > 1) {
+  nav_lang = lang_value[1];
+  // console.log("lang_value[1] =>", lang_value[1]);
 } else {
-  nav_lang = "en";
+  // console.log("navigator.language =>", navigator.language);
+
+  if (navigator.language === "ko-KR" || navigator.language === "ko") {
+    nav_lang = "ko";
+  } else {
+    nav_lang = "en";
+  }
 }
+
+// console.log("nav_lang =>", nav_lang);
 let lang = nav_lang;
 
 const lng_ko = lang_ko;
