@@ -13,8 +13,8 @@ lang_en = {
   Left_menu_5: "FAQ",
 
   Home_Title: "LEEDO",
-  Home_welcome_1: "Welcome to LEEDO World!",
-  Home_welcome_2: "<br><br>LEEDO World is where the blockchain game begins and the community gathers.<br>To make new history, secure your spot in LEEDO world now.",
+  Home_welcome_1: "Welcome to LEEDO Project!",
+  Home_welcome_2: "<br><br>LEEDO Project is where the blockchain game begins and the community gathers.<br>To make new history, secure your spot in LEEDO project now.",
 
   About_Title: "About LEEDO Project",
   Home_About:
@@ -29,16 +29,16 @@ lang_en = {
 
   Leedo_Token_Title: "LEEDO Token",
   Leedo_Token_Info:
-    "LEEDO token is the currency used in the LEEDO World and supports the ERC-20 standard. <br />" +
+    "LEEDO token is the currency used in the LEEDO Project and supports the ERC-20 standard. <br />" +
     "LEEDO tokens will be distributed among users who have checked in, <br />" +
     "700M will be issued in the first season and 300M in the second season. <br />" +
     "Additional issuance needs to be made by decision of the DAO. <br />",
 
   Leedo_Token_uses_info: "The purpose of the LEEDO token is to be created by the community, <br />" + "but the use cases we anticipate are:",
-  Leedo_Token_uses_1: "used as currency within the LEEDO World.",
+  Leedo_Token_uses_1: "used as currency within the LEEDO Project.",
   Leedo_Token_uses_2: "used as a community fund that is used to provide infrastructure in LEEDO World and various content.",
-  Leedo_Token_uses_3: "given to users who are active in LEEDO World.",
-  Leedo_Token_uses_4: "used as a liquidity supply fund for the LEEDO tokens.<span>(e.g. Uniswap)</span>.",
+  Leedo_Token_uses_3: "given to users who are active in LEEDO Project.",
+  Leedo_Token_uses_4: "used as a liquidity supply fund for the LEEDO Project.<span>(e.g. Uniswap)</span>.",
 
   Leedo_Token_Division_Info: "The distribution of LEEDO tokens is as follows: ",
 
