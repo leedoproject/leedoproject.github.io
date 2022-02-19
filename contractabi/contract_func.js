@@ -190,10 +190,10 @@ async function getStakedBalance(_myaddr) {
   return await leedovaultContract.methods.balanceOf(_myaddr).call();
 }
 
-async function setVaultApproved(_approve, _myaddr) {
+async function setVaultApproved(_approve, _myaddr, _chainId) {
   let rt_val = false;
   await nftContract.methods
-    .setApprovalForAll(leedovaultAddress, _approve)
+    .setApprovalForAll(leedovaultAddress[_chainId], _approve)
     .send({ from: _myaddr })
     .on("transactionHash", (txid) => {
       // console.log(`txid: ${txid}`)

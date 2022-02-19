@@ -338,13 +338,19 @@ async function VaultApprove() {
   let _approve = false;
   const target = document.getElementById("stake-btn");
   target.disabled = true;
-
-  _approve = await setVaultApproved(true, myAddr);
-  if (_approve) {
-    is_Vault_Approved = _approve;
-    getStakedCards(stakeKind);
-  } else {
-    target.disabled = false;
+  $("#stake-loading").show();
+  try {
+    _approve = await setVaultApproved(true, myAddr, chainId);
+    if (_approve) {
+      is_Vault_Approved = _approve;
+      getStakedCards(stakeKind);
+    } else {
+      target.disabled = false;
+    }
+    $("#stake-loading").hide();
+  } catch (error) {
+    console.log("VaultApprove => ", error);
+    $("#stake-loading").hide();
   }
 }
 
