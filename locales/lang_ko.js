@@ -13,16 +13,16 @@ lang_ko = {
   Left_menu_5: "FAQ",
 
   Home_Title: "LEEDO",
-  Home_welcome_1: "LEEDO 메타버스인 LEEDO World에 오신 것을 환영합니다!",
-  Home_welcome_2: "<br>LEEDO World는 블록체인 게임이 시작되는 땅이며 커뮤니티가 모여드는 공간입니다.<br>새로운 역사를 만들기 위해 지금 LEEDO 세계에서 당신의 자리를 확보하십시오.",
+  Home_welcome_1: "LEEDO 메타버스인 리도 프로젝트에 오신 것을 환영합니다!",
+  Home_welcome_2: "<br>리도 프로젝트는 블록체인 게임이 시작되는 땅이며 커뮤니티가 모여드는 공간입니다.<br>새로운 역사를 만들기 위해 지금 리도 프로젝트에서 당신의 자리를 확보하십시오.",
 
-  About_Title: "About LEEDO Project",
+  About_Title: "리도 프로젝트란?",
   Home_About:
-    "LEEDO Project는 커뮤니티를 중심으로 NFT와 LEEDO Token을 " +
+    "리도 프로젝트는 커뮤니티를 중심으로 리도 NFT와 LEEDO 토큰을 " +
     "분배하였으며<br />" +
     "탈중앙화 된 프로젝트의 구축을 목표로 합니다.<br><br>" +
-    "LEEDO Project의 모든 결정은 커뮤니티와 DAO에 의해 결정되며<br />" +
-    "LEEDO Project는 블록체인 게임 생태계의 핵심 구성요소인<br />" +
+    "리도 프로젝트의 모든 결정은 커뮤니티와 DAO에 의해 결정되며<br />" +
+    "리도 프로젝트는 블록체인 게임 생태계의 핵심 구성요소인<br />" +
     "게임, 게임 디파이, 커뮤니티, 마켓 등을 제공하는 개발팀에 대해<br />" +
     "적합한 기술적 환경과 펀드를 공급하고자 합니다.<br><br>" +
     "커뮤니티를 기반으로 새로운 프로젝트나 개발팀이 발굴되고<br />" +
@@ -30,20 +30,20 @@ lang_ko = {
 
   Leedo_Token_Title: "LEEDO Token",
   Leedo_Token_Info:
-    "LEEDO Token은 LEEDO Project에서 사용되는 화폐로 ERC-20 규격을" +
+    "LEEDO 토큰은 리도 프로젝트에서 사용되는 화폐로 ERC-20 규격을" +
     "지원합니다.<br />" +
-    "LEEDO Token은 체크인 한 사용자들에게 분배되며<br />" +
+    "LEEDO 토큰은 체크인 한 사용자들에게 분배되며<br />" +
     "첫 번째 시즌에는 7억 개가 발행되며 두 번째 시즌에는 3억 개가" +
     "발행됩니다.<br />" +
     "DAO의 결정에 의해 추가 발행될 수도 있습니다.",
 
   Leedo_Token_uses_info: "LEEDO Token의 용도는 커뮤니티에서 만들어가는 것이지만<br />" + "저희가 예상하는 용도는 다음과 같습니다.",
-  Leedo_Token_uses_1: "LEEDO World 내의 화폐로 사용됩니다",
-  Leedo_Token_uses_2: "LEEDO World 내에 인프라들이 들어오고 다양한 콘텐츠들이 공급되기 위해 사용되는 커뮤니티 펀드로도 사용이 됩니다.",
-  Leedo_Token_uses_3: "LEEDO World에서 활동을 하는 사용자에게 LEEDO Token이 주어집니다.",
+  Leedo_Token_uses_1: "리도 프로젝트 내의 화폐로 사용됩니다",
+  Leedo_Token_uses_2: "리도 월드 내에 인프라들이 들어오고 다양한 콘텐츠들이 공급되기 위해 사용되는 커뮤니티 펀드로도 사용이 됩니다.",
+  Leedo_Token_uses_3: "리도 프로젝트에서 활동을 하는 사용자에게 LEEDO Token이 주어집니다.",
   Leedo_Token_uses_4: "LEEDO Token의 유동성 공급<span>(예: 유니 스왑)</span>을 위한 유동성 공급 펀드로도 사용됩니다.",
 
-  Leedo_Token_Division_Info: "LEEDO Token의 분배는 다음과 같습니다.",
+  Leedo_Token_Division_Info: "LEEDO 토큰의 분배는 다음과 같습니다.",
 
   Roadmap_Title: "로드맵",
   Roadmap_1: "Genesis",
