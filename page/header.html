@@ -1,14 +1,16 @@
 <div>
-  <a href="../index.html" id="logo">
-    <svg class="logosvg" viewBox="0 0 150 32">
-      <text x="0" y="92%">L</text>
-      <text x="22" y="92%">E</text>
-      <text x="44" y="92%">E</text>
-      <text x="66" y="92%">D</text>
-      <text x="91" y="92%">O</text>
-    </svg>
-    <!--<img class="header-logo" src="../img/logo.png" alt="logo" />-->
-  </a>
+  <div id="header_logo">
+    <a onclick="location.href='../index.html'"  id="logo">
+      <svg class="logosvg" viewBox="0 0 150 32">
+        <text x="0" y="92%">L</text>
+        <text x="22" y="92%">E</text>
+        <text x="44" y="92%">E</text>
+        <text x="66" y="92%">D</text>
+        <text x="91" y="92%">O</text>
+      </svg>
+    </a>
+  
+  </div>
 
   <input type="checkbox" id="hamburger-menu" />
   <label for="hamburger-menu">
@@ -20,8 +22,8 @@
     <div id="lang" data-role="selectBox">
     <div date-value="optValue" class="selected-option" ></div>
         <ul class="hide">
-          <li onclick='selectLang("ko")'><i><img src="../img/icon-lang-ko.svg" alt=""/></i><span>KO</span></li>
-          <li onclick='selectLang("en")'><i><img src="../img/icon-lang-en.svg" alt=""/></i><span>EN</span</li>
+          <li onclick='changeLang("ko")'><i><img src="../img/icon-lang-ko.svg" alt=""/></i><span>KO</span></li>
+          <li onclick='changeLang("en")'><i><img src="../img/icon-lang-en.svg" alt=""/></i><span>EN</span</li>
         </ul>
     </div>
 
@@ -36,10 +38,56 @@
   let cur_lang =  getCurLang();
   setPagePath(cur_lang);
 
+  document.getElementById("logo").onclick = function(){
+    if(cur_lang === "ko"){
+      location.href="../index_ko.html";
+
+    }else{
+      location.href="../index.html";
+
+    }
+  }
+
+
+  function changeLang(_lang){
+    selectLang(_lang);
+    
+    let url = window.location.href;
+    let home = url.indexOf("index");
+    if (home > 0) {
+      if(cur_lang==="ko" && _lang==="en"){
+        location.href="../index.html";
+      }else{
+        location.href="../index_ko.html";
+      }
+    } else{
+      let kopage = url.indexOf("ko");
+      let enpage = url.indexOf("en");
+      if(kopage<0 && enpage<0){
+        if(cur_lang==="ko" && _lang==="en"){
+          location.href="../index.html";
+        }else{
+          location.href="../index_ko.html";
+        }
+      }
+    }
+
+    // if(_lang === "ko"){
+    //   location.href="../index_ko.html";
+    // }else{
+    //   location.href="../index.html";
+    // }
+  }
+
   function setPagePath(_lang){
     let target_page = "";
-    console.log("setPagePath lang=> ", _lang);
-    target_page = target_page + '<li class="header_target_home" style="display: none;" ><a href="../index.html?' + _lang + '" >Home</a></li>';
+
+    // console.log("setPagePath lang=> ", _lang);
+    if(_lang === "ko"){
+      target_page = target_page + '<li class="header_target_home" style="display: none;" ><a href="../index_ko.html" >Home</a></li>';
+    }else{
+      target_page = target_page + '<li class="header_target_home" style="display: none;" ><a href="../index.html" >Home</a></li>';
+    }
     target_page = target_page + '<li class="header_target_launchapp" style="display: block;"><a href="../page/launchapp.html?'  + _lang +  '" >Launch App</a></li>';
     target_page = target_page + '<li class="header_target_leedoworld" style="display: block;"><a href="../page/leedoworld.html?' +_lang +  '" >Leedo World</a></li>';
 
@@ -51,36 +99,35 @@
 
   function setPageAttr(){
     let url = window.location.href;
-  console.log("url    ", url);
-  let home = url.indexOf("index");
-  let launchapp = url.indexOf("launchapp");
-  let leedoworld = url.indexOf("leedoworld");
-  // console.log("searchsearch ",search)
-  if(launchapp > 0){
-    // Launchapp
-    $(".header-logo").attr("src", "../img/logo-green.png");
-    $(".header_target_home").attr("style","display:block;");
-    $(".header_target_launchapp").attr("style","display:none;");
-    $(".header_target_leedoworld").attr("style","display:block;");
-  }else{
-    $(".header-logo").attr("src", "../img/logo.png");
-    if(leedoworld >0){
-      // LeedoWorld
+    console.log("url    ", url);
+    let home = url.indexOf("index");
+    let launchapp = url.indexOf("launchapp");
+    let leedoworld = url.indexOf("leedoworld");
+    // console.log("searchsearch ",search)
+    if(launchapp > 0){
+      // Launchapp
+      $(".header-logo").attr("src", "../img/logo-green.png");
       $(".header_target_home").attr("style","display:block;");
-      $(".header_target_launchapp").attr("style","display:block;");
-      $(".header_target_leedoworld").attr("style","display:none;");
-
-    }else{
-      // Home
-      $(".header_target_home").attr("style","display:none;");
-      $(".header_target_launchapp").attr("style","display:block;");
+      $(".header_target_launchapp").attr("style","display:none;");
       $(".header_target_leedoworld").attr("style","display:block;");
+    }else{
+      $(".header-logo").attr("src", "../img/logo.png");
+      if(leedoworld >0){
+        // LeedoWorld
+        $(".header_target_home").attr("style","display:block;");
+        $(".header_target_launchapp").attr("style","display:block;");
+        $(".header_target_leedoworld").attr("style","display:none;");
 
+      }else{
+        // Home
+        $(".header_target_home").attr("style","display:none;");
+        $(".header_target_launchapp").attr("style","display:block;");
+        $(".header_target_leedoworld").attr("style","display:block;");
+
+      }
     }
-  }
 
   }
-
 
 
   const body = document.querySelector("body");

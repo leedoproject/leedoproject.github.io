@@ -9,7 +9,14 @@ if (lang_value.length > 1) {
 } else {
   // console.log("navigator.language =>", navigator.language);
 
-  if (navigator.language === "ko-KR" || navigator.language === "ko") {
+  // if (navigator.language === "ko-KR" || navigator.language === "ko") {
+  //   nav_lang = "ko";
+  // } else {
+  //   nav_lang = "en";
+  // }
+  let url = window.location.href;
+  let home_ko = url.indexOf("index_ko");
+  if (home_ko > 0) {
     nav_lang = "ko";
   } else {
     nav_lang = "en";

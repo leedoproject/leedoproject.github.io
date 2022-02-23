@@ -215,6 +215,7 @@ header {
 
 header a#logo {
   float: left;
+  cursor: pointer;
 }
 header a#logo > img {
   width: 110px;
