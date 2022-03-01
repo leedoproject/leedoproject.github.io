@@ -12,6 +12,22 @@ $(function () {
   };
 });
 
+
+(function($){
+  $(window).on("load",function(){
+    $(".snb a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
+      highlightSelector:".snb a"
+    });
+
+    $("a[rel='next']").click(function(e){
+      e.preventDefault();
+      var to=$(this).parent().parent("section").next().attr("id");
+      $.mPageScroll2id("scrollTo",to);
+    });
+  });
+})(jQuery);
+
+
 $(function () {
   $(".snb>ol>li>a").click(function () {
     $("html, body").animate(
