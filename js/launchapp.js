@@ -81,7 +81,7 @@ async function startApp() {
   try {
     chainId = await dappGetCurChainId(web3);
     console.log("chainID => ", chainId);
-    if (chainId === 1 || chainId === 4 || chainId === 5) {
+    if (chainId === 1 || chainId === 4) {
       await getAccount();
       // if (walletConnected) {
       initUseItems();
@@ -148,7 +148,7 @@ async function getContracts() {
       $("#leedo-staking-address").html(getLink(leedovaultAddress[chainId], chainId));
       $("#leedo-erc20-address").html(getLink(leedoerc20Address[chainId], chainId));
     }
-    if (chainId === 4 || chainId === 5) {
+    if (chainId === 4) {
       getNFTContract(chainId);
       getErc20Contract(chainId);
       getVaultContract(chainId);
