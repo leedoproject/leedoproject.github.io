@@ -36,7 +36,7 @@ function getWindowHeight() {
 }
 
 function gotoDiscord() {
-  var popup = window.open("https://discord.com/invite/xkTxRjjhVs", "discord");
+  var popup = window.open("https://discord.gg/8snzru7D5C", "discord");
 }
 
 function goOpenSea() {
