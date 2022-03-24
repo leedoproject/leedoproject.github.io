@@ -1,3 +1,6 @@
+const space_shuttle_img = ["../img/topbanner-Nuri9-2.jpg"];
+// showBanner();
+
 $(function () {
   let header = document.querySelector("#header");
   let headerHeight = header.offsetHeight;
@@ -12,21 +15,19 @@ $(function () {
   };
 });
 
-
-(function($){
-  $(window).on("load",function(){
+(function ($) {
+  $(window).on("load", function () {
     $(".snb a,a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({
-      highlightSelector:".snb a"
+      highlightSelector: ".snb a",
     });
 
-    $("a[rel='next']").click(function(e){
+    $("a[rel='next']").click(function (e) {
       e.preventDefault();
-      var to=$(this).parent().parent("section").next().attr("id");
-      $.mPageScroll2id("scrollTo",to);
+      var to = $(this).parent().parent("section").next().attr("id");
+      $.mPageScroll2id("scrollTo", to);
     });
   });
 })(jQuery);
-
 
 $(function () {
   $(".snb>ol>li>a").click(function () {
@@ -63,3 +64,12 @@ document.addEventListener("DOMContentLoaded", function () {
     addHeight: true,
   });
 });
+
+function showBanner() {
+  let loop_cnt = 0;
+  setInterval(function () {
+    document.getElementById("banner-img").src = space_shuttle_img[loop_cnt];
+    loop_cnt = loop_cnt + 1;
+    loop_cnt == space_shuttle_img.length ? (loop_cnt = 0) : loop_cnt;
+  }, 5000);
+}
